@@ -5,7 +5,7 @@ const Login = (props)=> {
   return(
         <>
       <Img>
-        <img src ='/images/netflixxx.png' alt=""/>
+        <img src ='/images/netflix.jpg' alt=""/>
         </Img>
         <Container>
         <h1>Unlimited movies,TV</h1>
@@ -18,7 +18,8 @@ const Login = (props)=> {
     }
 const Img = styled.div`
 width: 10px;
-height: auto;
+margin:8px;
+margin-left:1.5em;
 `;
 const Container = styled.div`
 text-align: center;
