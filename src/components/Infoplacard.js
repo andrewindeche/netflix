@@ -5,7 +5,7 @@ const Infoplacard = (props)=> {
   return(
         <>
         <Container>
-        <h1>Watch everywhere.</h1>
+        <h2>Watch everywhere.</h2>
         <p>Stream unlimited movies and TV shows on</p>
         <p>your phone, tablet, laptop, and TV.</p>
         </Container>
