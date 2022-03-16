@@ -21,10 +21,12 @@ const Login = (props)=> {
 const Img = styled.div`
 width: 10px;
 margin-left:1.5em;
-margin-top:5px;
+padding-top:14px;
 `;
 const Container = styled.div`
 text-align: center;
 padding-top:2em;
+padding-bottom: 6.5em;
+border-bottom:solid gray 6px;
 `;
 export default Login;

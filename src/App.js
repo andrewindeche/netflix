@@ -1,14 +1,15 @@
 import React from 'react';
 //import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
 import './index.css';
 import './App.css';
 import Login from './components/Login';
+import Infoplacard from './components/Infoplacard';
 
 function App() {
   return (
     <div className="App">
             <Login/>
+            <Infoplacard/>
       </div>
         );
      }

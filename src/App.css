@@ -1,14 +1,19 @@
 .App{
 background-image: url(./bg.jpg);
-height:32em;
+height:25.5em;
 }
 .btn-lg{
 color:white;
 font-size: 15px;
 display: flex;
-padding: 9px 26px;
+padding: 8px 21px;
 background-color: #FF0000;
 float:right;
 margin-right:6em;
-margin-top:-5em;
+margin-top:-4.8em;
+border-radius: 6px;
+}
+p {
+line-height: 0.2em;
+font-size:24px;
 }
