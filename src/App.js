@@ -5,6 +5,7 @@ import './App.css';
 import Login from './components/Login';
 import Infoplacard from './components/Infoplacard';
 import Infoplacard2 from './components/Infoplacard2';
+import Infoplacard3 from './components/Infoplacard3';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
             <Login/>
             <Infoplacard/>
             <Infoplacard2/>
+            <Infoplacard3/>
       </div>
         );
      }

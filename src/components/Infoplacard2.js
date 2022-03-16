@@ -13,6 +13,7 @@ const Infoplacard2 = (props)=> {
           <p>characters in a space made just for them—free</p>
           <p>with your membership.</p>
         </Container>
+        <Border></Border>
         </>
       );
     }
@@ -26,6 +27,10 @@ padding-top:4em;
 padding-right:16em;
 position:relative;
 padding-bottom:3em;
+`;
+const Border = styled.div`
+padding-top:16em;
+border-bottom:solid gray 6px;
 `;
 const Img = styled.div`
 width: 10px;
