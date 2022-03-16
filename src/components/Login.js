@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from 'react-bootstrap/Button';
 
 const Login = (props)=> {
   return(
@@ -7,6 +8,7 @@ const Login = (props)=> {
       <Img>
         <img src ='/images/netflix.jpg' alt=""/>
         </Img>
+        <Button className = "btn-lg" variant="success" type="submit">Sign In</Button>
         <Container>
         <h1>Unlimited movies,TV</h1>
         <h1>shows, and more.</h1>
@@ -18,8 +20,8 @@ const Login = (props)=> {
     }
 const Img = styled.div`
 width: 10px;
-margin:8px;
 margin-left:1.5em;
+margin-top:5px;
 `;
 const Container = styled.div`
 text-align: center;
