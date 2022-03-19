@@ -55,7 +55,7 @@ const Faqs = (props)=> {
          </Card>
         </Button>
         <br></br>
-        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <p style={{fontSize: '20px'}}>Ready to watch? Enter your email to create or restart your membership.</p>
         <Search>
         <form action="/action_page.php">
           <input type="text" placeholder="Email address" name="search"></input>
