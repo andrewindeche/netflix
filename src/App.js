@@ -6,6 +6,8 @@ import Login from './components/Login';
 import Infoplacard from './components/Infoplacard';
 import Infoplacard2 from './components/Infoplacard2';
 import Infoplacard3 from './components/Infoplacard3';
+import Faqs from './components/Faqs';
+
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
             <Infoplacard/>
             <Infoplacard2/>
             <Infoplacard3/>
-      </div>
+            <Faqs/>
+          </div>
         );
      }
 

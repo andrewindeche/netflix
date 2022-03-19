@@ -14,6 +14,12 @@ const Login = (props)=> {
         <h1>shows, and more.</h1>
         <h5>Watch anywhere.Cancel anytime.</h5>
         <h6>Ready to watch?Enter your email to create or restart your membership.</h6>
+        <Search>
+        <form action="/action_page.php">
+          <input type="text" placeholder="Email address" name="search"></input>
+          <button type="submit">Get Started > </button>
+        </form>
+      </Search>
         </Container>
         </>
       );
@@ -26,7 +32,24 @@ padding-top:14px;
 const Container = styled.div`
 text-align: center;
 padding-top:2em;
-padding-bottom: 6.5em;
-border-bottom:solid gray 6px;
+padding-bottom: 4.5em;
+border-bottom:solid #696969 6px;
+line-height: 1.4em;
+`;
+const Search = styled.div`
+padding-right:7em;
+button {
+background-color:#DC143C;
+color:white;
+height:3em;
+width:9em;
+font-size:26px;
+position: absolute;
+  }
+input{
+height:4.8em;
+width:35em;
+font-size:15px;
+}
 `;
 export default Login;
