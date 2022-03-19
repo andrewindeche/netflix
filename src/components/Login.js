@@ -33,7 +33,7 @@ const Container = styled.div`
 text-align: center;
 padding-top:2em;
 padding-bottom: 4.5em;
-border-bottom:solid #696969 6px;
+border-bottom:solid #3A3B3C 6px;
 line-height: 1.4em;
 `;
 const Search = styled.div`

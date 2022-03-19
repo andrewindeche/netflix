@@ -30,7 +30,7 @@ padding-bottom:3em;
 `;
 const Border = styled.div`
 padding-top:16em;
-border-bottom:solid gray 6px;
+border-bottom:solid #3A3B3C 6px;
 `;
 const Img = styled.div`
 width: 10px;
