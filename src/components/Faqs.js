@@ -8,7 +8,7 @@ const Faqs = (props)=> {
         <h2>Frequently Asked Questions</h2>
         <Button>
         <Card>
-        <span>What is Netflix?
+        <span><p>What is Netflix?</p>
          <button type="button" class="button">
            +
          </button></span>
@@ -16,7 +16,7 @@ const Faqs = (props)=> {
         </Button>
         <Button>
         <Card>
-        <span>How much does Netflix cost?
+        <span><p>How much does Netflix cost?</p>
          <button type="button" class="button">
            +
          </button></span>
@@ -24,7 +24,7 @@ const Faqs = (props)=> {
         </Button>
         <Button>
         <Card>
-        <span>Where can i watch?
+        <span><p>Where can i watch?</p>
          <button type="button" class="button">
            +
          </button></span>
@@ -32,7 +32,7 @@ const Faqs = (props)=> {
         </Button>
         <Button>
         <Card>
-        <span>How do i cancel?
+        <span><p>How do i cancel?</p>
          <button type="button" class="button">
            +
          </button></span>
@@ -40,7 +40,7 @@ const Faqs = (props)=> {
         </Button>
         <Button>
         <Card>
-        <span>What can i watch on Netflix?
+        <span><p>What can i watch on Netflix?</p>
          <button type="button" class="button">
            +
          </button></span>
@@ -48,7 +48,7 @@ const Faqs = (props)=> {
         </Button>
         <Button>
         <Card>
-        <span>is Netflix good for kids?
+        <span><p>is Netflix good for kids?</p>
          <button type="button" class="button">
            +
          </button></span>
@@ -79,8 +79,14 @@ final{
 `;
 const Button = styled.div`
 text-align: left;
+p{
+  padding-top:0.5em;
+  position:absolute;
+}
 button{
-  margin-left:10em;
+  margin-left:15em;
+  margin-top:0.4em;
+  position:relative;
 }
 `;
 const Card = styled.div`
@@ -89,6 +95,7 @@ height:2.5em;
 margin-right:19em;
 padding-left:1em;
 margin-bottom: 10px;
+
 `;
 const Search = styled.div`
 padding-right:7em;
