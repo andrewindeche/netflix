@@ -87,6 +87,8 @@ button{
   margin-left:15em;
   margin-top:0.4em;
   position:relative;
+  color:white;
+  background-color:#3A3B3C;
 }
 `;
 const Card = styled.div`
