@@ -1,0 +1,48 @@
+.content {
+    margin-left: 30px;
+    padding-top: 150px;
+    height: 200px;
+    margin-bottom: 34px;
+  }
+  .banner {
+    color: white;
+    object-fit: contain;
+    height: 600px;
+  }
+  .title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-bottom: 0.6rem;
+  }
+  .description {
+    padding-bottom: 0.8rem;
+    width: 38%;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    max-width: 35%;
+    height: 80px;
+  }
+  .button_play {
+   font-size:1.3rem;
+   padding:15px;
+   padding-right: 4em;
+   border-radius: 6px;
+   font-size: 15px;
+   font-weight: bold;
+   margin-left:1em;
+  }
+  .button_list{
+    margin-left:2em;
+    font-size:1.3rem;
+    padding:15px;
+    padding-right:2em;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .icon{
+    margin-right: 8px;
+    padding-left:1em;
+    font-size: 18px;
+  }

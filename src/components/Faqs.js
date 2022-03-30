@@ -1,17 +1,33 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import styled from 'styled-components';
 
 const Faqs = (props)=> {
+ const [isOpen, setIsOpen] = useState(false);
+ const toggling = () => setIsOpen(!isOpen);
+
   return(
         <>
         <Container>
         <h2>Frequently Asked Questions</h2>
-        <Button>
+        <Button onClick={toggling}>
         <Card>
         <span><p>What is Netflix?</p>
          <button type="button" class="button">
            +
          </button></span>
+         {isOpen && (
+         <DropDownListContainer>
+            Netflix is a streaming service that offers a wide variety of award-
+            winning TV shows, movies, anime, documentaries, and more on
+            thousands of internet-connected devices.
+
+            You can watch as much as you want, whenever you want without
+            a single commercial – all for one low monthly price. There's
+            always something new to discover and new TV shows and
+            movies are added every week!
+          </DropDownListContainer>
+              )
+            }
          </Card>
         </Button>
         <Button>
@@ -20,18 +36,30 @@ const Faqs = (props)=> {
          <button type="button" class="button">
            +
          </button></span>
+         {isOpen && (
+         <DropDownListContainer>
+
+         </DropDownListContainer>
+              )
+            }
          </Card>
         </Button>
         <Button>
-        <Card>
+        <Card onClick={toggling}>
         <span><p>Where can i watch?</p>
          <button type="button" class="button">
            +
          </button></span>
+         {isOpen && (
+         <DropDownListContainer>
+
+         </DropDownListContainer>
+              )
+            }
          </Card>
         </Button>
         <Button>
-        <Card>
+        <Card onClick={toggling}>
         <span><p>How do i cancel?</p>
          <button type="button" class="button">
            +
@@ -39,7 +67,7 @@ const Faqs = (props)=> {
          </Card>
         </Button>
         <Button>
-        <Card>
+        <Card onClick={toggling}>
         <span><p>What can i watch on Netflix?</p>
          <button type="button" class="button">
            +
@@ -47,7 +75,7 @@ const Faqs = (props)=> {
          </Card>
         </Button>
         <Button>
-        <Card>
+        <Card onClick={toggling}>
         <span><p>is Netflix good for kids?</p>
          <button type="button" class="button">
            +
@@ -97,6 +125,7 @@ height:2.5em;
 margin-right:19em;
 padding-left:1em;
 margin-bottom: 10px;
+position:relative;
 
 `;
 const Search = styled.div`
@@ -114,5 +143,12 @@ height:4.8em;
 width:35em;
 font-size:15px;
 }
+`;
+const DropDownListContainer = styled.div`
+text-align: left;
+font-size:25px;
+background-color:#3A3B3C;
+border-bottom:solid #3A3B3C 6px;
+position:absolute;
 `;
 export default Faqs;
