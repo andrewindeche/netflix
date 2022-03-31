@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import requests from "./requests";
 import "./Banner.css";
-import { faPlay, faPlus} from "@fortawesome/free-solid-svg-icons";
+import { faInfoCircle, faPlay} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Banner() {
@@ -41,7 +41,7 @@ function Banner() {
       </h1>
       {/* description */}
 
-      <h2 className="description">{truncate(movie?.overview, 160)}</h2>
+      <h2 className="description">{truncate(movie?.overview, 200)}</h2>
 
       {/* div with 2 buttons play and more info */}
       <div className="buttons">
@@ -49,7 +49,7 @@ function Banner() {
       className = "icon" icon= {faPlay}/>Play</button></span>
 
       <span><button className="button_list"><FontAwesomeIcon 
-       className = "icon" icon= {faPlus}/>My List</button></span>
+       className = "icon" icon= {faInfoCircle}/>More Info</button></span>
       </div>
     </div>
     <div className="fade"/>

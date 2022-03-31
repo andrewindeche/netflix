@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from 'react-bootstrap/Button';
+import { faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LandingPage = (props)=> {
   return(
@@ -17,7 +19,8 @@ const LandingPage = (props)=> {
         <Search>
         <form action="/action_page.php">
           <input type="text" placeholder="Email address" name="search"></input>
-          <button type="submit">Get Started > </button>
+          <button type="submit">Get Started <FontAwesomeIcon 
+       className = "icon" icon= {faChevronRight}/>  </button>
         </form>
       </Search>
         </Container>

@@ -1,5 +1,7 @@
 import React, { useState }  from 'react';
 import styled from 'styled-components';
+import { faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Faqs = (props)=> {
  const [isOpen, setIsOpen] = useState(false);
@@ -87,7 +89,8 @@ const Faqs = (props)=> {
         <Search>
         <form action="/action_page.php">
           <input type="text" placeholder="Email address" name="search"></input>
-          <button type="submit">Get Started > </button>
+          <button type="submit">Get Started <FontAwesomeIcon 
+       className = "icon" icon= {faChevronRight}/> </button>
         </form>
       </Search>
         </Container>

@@ -8,7 +8,7 @@ import Infoplacard2 from './components/Infoplacard2';
 import Infoplacard3 from './components/Infoplacard3';
 import Faqs from './components/Faqs';
 import Bottomnav from './components/Bottomnav';
-import Banner from './components/Banner';
+import Row from './components/Row';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Infoplacard3/>
             <Faqs/>
             <Bottomnav/>
-            <Banner/>
+            <Row/>
           </div>
           </>
         );
