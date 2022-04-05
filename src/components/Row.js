@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
+import React,{ useState, useEffect } from "react";
 import axios from "axios";
 import "./Row.css";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
 
-const baseUrl = "https://image.tmdb.org/t/p/original";
+const image_url = "https://image.tmdb.org/t/p/original";
 
-const Row = ({ title, fetchUrl, isLargeRow }) => {
+function Row({ title, fetchUrl, isLargeRow }){
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
 
@@ -20,7 +20,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
   }, [fetchUrl]);
   const opts = {
     height: "390",
-    width: "740",
+    width: "100%",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
@@ -30,11 +30,13 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
   const handleClick = (movie) => {
     if (trailerUrl) {
       setTrailerUrl("");
-    } else {
-      movieTrailer(movie?.name || "")
+    }
+    else {
+      movieTrailer(movie?.title || movie?.original_name || movie?.name)
         .then((url) => {
           const urlParams = new URLSearchParams(new URL(url).search);
           setTrailerUrl(urlParams.get("v"));
+          console.log(trailerUrl);
         })
         .catch((err) => console.log(err));
     }
@@ -49,7 +51,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
             key={movie.id}
             onClick={() => handleClick(movie)}
             className={`row__poster ${isLargeRow && "row__posterLarge"} `}
-            src={`${baseUrl}${
+            src={`${image_url}${
               isLargeRow ? movie.poster_path : movie.backdrop_path
             }`}
             alt={movie.name}
@@ -60,11 +62,10 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
         <YouTube
           videoId={trailerUrl}
           opts={opts}
-          className="Row" // defaults -> null
         />
-      )}{" "}
+      )}
     </div>
   );
-};
+}
 
 export default Row;

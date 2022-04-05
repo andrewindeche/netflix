@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Infoplacard2 = (props)=> {
   return(
@@ -13,7 +15,8 @@ const Infoplacard2 = (props)=> {
           <br/>
           <p>Watch a selection of new movies and TV</p>
           <p>shows without adding any payment details!</p>
-          <p1>Get the app > </p1>
+          <p1>Get the app</p1><FontAwesomeIcon
+           className = "icon" icon= {faChevronRight}/>
         </Container>
         <Img>
           <img src ='/images/en.png' alt=""/>

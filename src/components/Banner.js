@@ -45,10 +45,10 @@ function Banner() {
 
       {/* div with 2 buttons play and more info */}
       <div className="buttons">
-     <span><button className="button_play"><FontAwesomeIcon 
+     <span><button className="button_play"><FontAwesomeIcon
       className = "icon" icon= {faPlay}/>Play</button></span>
 
-      <span><button className="button_list"><FontAwesomeIcon 
+      <span><button className="button_list"><FontAwesomeIcon
        className = "icon" icon= {faInfoCircle}/>More Info</button></span>
       </div>
     </div>
