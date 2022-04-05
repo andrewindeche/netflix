@@ -9,9 +9,9 @@ function Home(){
     <Row
         title="Netflix Trending"
         fetchUrl={requests.fetchTrending}
-        isLargeRow // prop for styling individual row
+        isLargeRow 
       />
-      <Row title="Top Rated " fetchUrl={requests.fetchNetflixOriginals} />
+      <Row title="Top Rated" fetchUrl={requests.fetchNetflixOriginals} isLargeRow  />
     </>
   );
 }
