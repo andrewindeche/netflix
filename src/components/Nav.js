@@ -94,7 +94,7 @@ const Nav = (props) => {
                  :
                  <>
                      <NavMenu>
-                             <a href ="/Home" >
+                             <a href ="/home" >
                                  <span>HOME</span>
                              </a>
                          <a href ="/TvShows">
@@ -148,9 +148,9 @@ const Nav = (props) => {
 `;
 
 const Logo = styled.a`
-    width: 80px;
-    margin-top: 4px;
-    max-height: 70px;
+    width: 170px;
+    margin-top: 24px;
+    max-height: 90px;
     font-size: 0px;
     display: inline-block;
     padding-bottom: 10px;

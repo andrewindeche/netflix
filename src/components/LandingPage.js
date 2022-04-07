@@ -1,16 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from 'react-bootstrap/Button';
 import { faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LandingPage = (props)=> {
   return(
         <>
-      <Img>
-        <img src ='/images/netflix.jpg' alt=""/>
-        </Img>
-        <Button className = "btn-lg" variant="success" type="submit">Sign In</Button>
         <Container>
         <h1>Unlimited movies,TV</h1>
         <h1>shows, and more.</h1>
@@ -27,15 +22,10 @@ const LandingPage = (props)=> {
         </>
       );
     }
-const Img = styled.div`
-width: 10px;
-margin-left:1.5em;
-padding-top:14px;
-`;
 const Container = styled.div`
 text-align: center;
 padding-top:2em;
-padding-bottom: 4.5em;
+padding-bottom: 8em;
 border-bottom:solid #3A3B3C 6px;
 line-height: 1.4em;
 `;
