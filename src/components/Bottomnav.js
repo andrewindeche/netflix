@@ -58,8 +58,9 @@ position: relative;
 display: inline-block;
 `;
 const Allists = styled.div`
-padding-top:4em;
+padding-top:2em;
 padding-left:34em;
+padding-bottom:4em;
 color:grey;
 font-size:14px;
 line-height:1.6em;

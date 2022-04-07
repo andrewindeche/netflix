@@ -5,8 +5,6 @@ import {useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { selectUserName, selectUserPhoto, setUserLoginDetails, setSignOutState} from '../users/userSlice';
-import { faMagnifyingGlass,faHeart,faBell} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
   const optionMovies = [
      {
@@ -113,13 +111,6 @@ const Nav = (props) => {
                             ))}
                             </Drop>
                            </a>
-                         <a href="/">
-                          <FontAwesomeIcon icon={ faMagnifyingGlass}/>
-                         </a>
-                         <a href="/"><FontAwesomeIcon className = "icon" icon= {faHeart}/>My List</a>
-                         <a href="/">
-                          <FontAwesomeIcon icon={ faBell}  />
-                         </a>
                      </NavMenu>
                      <SignOut>
                          <UserImage src={userPhoto} alt={userName}/>
@@ -137,7 +128,8 @@ const Nav = (props) => {
     top: 0;
     left:0;
     right: 0;
-    height: 60px;
+    background-color: #090b13;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -148,11 +140,11 @@ const Nav = (props) => {
 
 const Logo = styled.a`
     width: 170px;
-    margin-top: 60px;
+    margin-top: 30px;
     max-height: 90px;
     font-size: 0px;
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     img {
         display: block;
         width: 100%;
@@ -284,7 +276,7 @@ const Login = styled.a`
     background-color : red;
     font-size:16px;
     padding: 4px 12px;
-    margin-top: 35px;
+    margin-top: 20px;
     text-transform: lowercase;
     letter-spacing: 1.5px;
     border:1px solid #f9f9f9;

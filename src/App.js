@@ -8,7 +8,6 @@ import Nav from './components/Nav';
 
 function App() {
   return (
-      <>
     <div className="App"> 
       <Router>
         <Nav/> 
@@ -18,7 +17,6 @@ function App() {
         </Routes> 
       </Router>        
       </div>
-      </>
         );
      }
 

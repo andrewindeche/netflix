@@ -1,4 +1,5 @@
 import React from 'react';
+import "./LandingPage.css";
 import styled from 'styled-components';
 import { faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const LandingPage = (props)=> {
   return(
         <>
+        <div className="LandingPage"> 
         <Container>
         <h1>Unlimited movies,TV</h1>
         <h1>shows, and more.</h1>
@@ -19,6 +21,7 @@ const LandingPage = (props)=> {
         </form>
       </Search>
         </Container>
+        </div>
         </>
       );
     }

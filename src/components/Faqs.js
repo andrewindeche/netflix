@@ -100,7 +100,6 @@ const Faqs = (props)=> {
 
 const Container = styled.div`
 text-align: left;
-padding-top:1em;
 padding-left:18em;
 padding-bottom: 2em;
 border-bottom:solid #3A3B3C 6px;
