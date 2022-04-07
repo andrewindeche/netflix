@@ -24,8 +24,8 @@ const LandingPage = (props)=> {
     }
 const Container = styled.div`
 text-align: center;
-padding-top:2em;
-padding-bottom: 8em;
+padding-top:4em;
+padding-bottom: 2.5em;
 border-bottom:solid #3A3B3C 6px;
 line-height: 1.4em;
 `;

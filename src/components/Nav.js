@@ -90,7 +90,7 @@ const Nav = (props) => {
              </Logo>
                {
                  !userName ?
-                 <Login onClick={handleAuth}>Login</Login>
+                 <Login onClick={handleAuth}>Sign In</Login>
                  :
                  <>
                      <NavMenu>
@@ -138,7 +138,6 @@ const Nav = (props) => {
     left:0;
     right: 0;
     height: 60px;
-    background-color: #090b13;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,7 +148,7 @@ const Nav = (props) => {
 
 const Logo = styled.a`
     width: 170px;
-    margin-top: 24px;
+    margin-top: 60px;
     max-height: 90px;
     font-size: 0px;
     display: inline-block;
@@ -282,9 +281,11 @@ const NavMenu = styled.div`
 `;
 
 const Login = styled.a`
-    background-color : rgba(0,0,0, 0.6);
-    padding: 8px 16px;
-    text-transform: uppercase;
+    background-color : red;
+    font-size:16px;
+    padding: 4px 12px;
+    margin-top: 35px;
+    text-transform: lowercase;
     letter-spacing: 1.5px;
     border:1px solid #f9f9f9;
     border-radius: 4px;
