@@ -7,8 +7,8 @@ function Home(){
     <>
     <Banner/>
     <Row title="Netflix Trending" fetchUrl={requests.fetchTrending} isLargeRow />
-      <Row title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
-      <Row title="Upcoming Movies" fetchUrl={requests.fetchUpcoming} isLargeRow />
+    <Row title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
+    <Row title="Upcoming Movies" fetchUrl={requests.fetchUpcoming} isLargeRow />   
     </>
   );
 }

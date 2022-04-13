@@ -25,11 +25,29 @@ const optionMovies = [
      },
 
      {
-       label: "Documentaries",
-       value: "Documentaries",
+       label: "Animation",
+       value: "Animation",
      },
    ];
 
+   const optionTvshows = [
+    {
+     label: "Popular",
+     value: "Popular",
+     },
+     {
+       label: "Airing Today",
+       value: "Airing Today",
+     },
+     {
+       label: "On TV",
+       value: "On TV",
+     },
+     {
+       label: "Top Rated",
+       value: "Top Rated",
+     },
+   ];
 const Nav = (props) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -95,14 +113,24 @@ const Nav = (props) => {
                             <a href ="/home" >
                                 <span>HOME</span>
                             </a>
-                        <a href ="/TvShows">
+                        <a href ="/home/TvShows">
                             <span>TV SHOWS</span>
+                            <Drop>
+                            {optionTvshows.map((option) => (
+                               <Link to={`/home/TvShows/${option.value}`}>
+                                   <span>
+                                       <option value={option.value} onClick={()=> handleClick(option.value)}>{option.label}</option>
+
+                                   </span>
+                               </Link>
+                           ))}
+                           </Drop>
                         </a>
-                        <a href ="/Movies">
+                        <a href ="/home/movies/">
                             <span>MOVIES</span>
                             <Drop>
                             {optionMovies.map((option) => (
-                               <Link to={`/movies/${option.value}`}>
+                               <Link to={`/home/movies/${option.value}`}>
                                    <span>
                                        <option value={option.value} onClick={()=> handleClick(option.value)}>{option.label}</option>
 
