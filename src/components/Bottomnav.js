@@ -5,7 +5,7 @@ const Bottomnav = (props)=> {
   return(
         <>
         <Allists>
-        <h4>Questions?Contact us.</h4>
+        <p style={{paddingLeft:'1.5em'}}>Questions?Contact us.</p>
         <Firstlist>
         <ul>FAQ</ul>
         <ul>Investor Relations</ul>
