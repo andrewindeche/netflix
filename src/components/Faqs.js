@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Faqs = (props)=> {
  const [isOpen, setIsOpen] = useState(false);
- const toggling = () => setIsOpen(!isOpen);
-
+ const toggling = () => setIsOpen(!isOpen); 
   return(
         <>
         <Container>
@@ -19,7 +18,14 @@ const Faqs = (props)=> {
          </button></span>
          {isOpen &&  (
          <DropDownListContainer>
-           
+          Netflix is a streaming service that offers a wide variety of award-
+          winning TV shows, movies, anime, documentaries, and more on 
+          thousands of internet-connected devices.
+
+          You can watch as much as you want, whenever you want without 
+          a single commercial – all for one low monthly price. There's 
+          always something new to discover and new TV shows and 
+          movies are added every week!
           </DropDownListContainer>
               )
             }
@@ -144,6 +150,6 @@ text-align: left;
 font-size:25px;
 background-color:#3A3B3C;
 border-bottom:solid #3A3B3C 6px;
-position:absolute;
+position:relative;
 `;
 export default Faqs;
