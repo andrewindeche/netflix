@@ -9,10 +9,11 @@ const LandingPage = (props)=> {
         <>
         <div className="LandingPage"> 
         <Container>
-        <h1>Unlimited movies,TV</h1>
-        <h1>shows, and more.</h1>
-        <h5>Watch anywhere.Cancel anytime.</h5>
-        <h6>Ready to watch?Enter your email to create or restart your membership.</h6>
+        <Introduction>
+        <h1 id="intro-text">Unlimited movies,TV shows, and more.</h1>
+        <p id="intro-paragraph">Watch anywhere.Cancel anytime.</p>
+        <p id="intro-paragraph">Ready to watch?Enter your email to create or restart your membership.</p>
+        </Introduction>
         <Search>
         <form action="/action_page.php">
           <input type="text" placeholder="Email address" name="search"></input>
@@ -27,11 +28,16 @@ const LandingPage = (props)=> {
     }
 const Container = styled.div`
 text-align: center;
-padding-top:4em;
-padding-bottom: 2.5em;
+padding:4em;
+font-size:23px;
 border-bottom:solid #3A3B3C 6px;
 line-height: 1.4em;
 `;
+const Introduction = styled.div`
+margin: 9em 2em 0;
+font-weight: bolder;
+`;
+
 const Search = styled.div`
 padding-right:7em;
 button {
