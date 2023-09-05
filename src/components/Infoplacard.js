@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Infoplacard = (props)=> {
+const Infoplacard = ()=> {
   return(
         <>
         <Container>

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Infoplacard2 = (props)=> {
   return(
         <>
-          <Container>
+          <Container2>
           <H2>
           <h2>Have an Android</h2>
           <h2>Phone?Get our new</h2>
@@ -17,23 +17,16 @@ const Infoplacard2 = (props)=> {
           <p>shows without adding any payment details!</p>
           <p1>Get the app</p1><FontAwesomeIcon
            className = "icon" icon= {faChevronRight}/>
-        </Container>
+        </Container2>
         <Img>
           <img src ='/images/en.png' alt=""/>
           </Img>
-          <Border></Border>
         </>
       );
     }
-const Container = styled.div`
+const Container2 = styled.div`
 padding-left:12em;
-padding-top:2em;
 position:absolute;
-padding-bottom: 2em;
-`;
-const Border = styled.div`
-padding-top:16em;
-border-bottom:solid #3A3B3C 6px;
 padding-bottom: 2em;
 `;
 const H2 = styled.div`
@@ -44,7 +37,6 @@ text-align: left;
 float:right;
 position: relative;
 display:inline-block;
-padding-top:4em;
 padding-right:16em;
 position:relative;
 padding-bottom:3em;

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const LandingPage = (props)=> {
+const LandingPage = ()=> {
   return(
         <>
         <div className="LandingPage"> 

@@ -6,7 +6,7 @@ const Infoplacard2 = ()=> {
         <>
         <Container>
         <Img>
-          <img src ='/images/logo.jpg' alt=""/>
+          <img src ='/images/logo.png' alt="netflix kids"/>
           </Img>
           <Textbox>
           <h1>Create profiles for kids.</h1>
@@ -15,7 +15,6 @@ const Infoplacard2 = ()=> {
           <p2>free with your membership.</p2>
           </Textbox>
         </Container>
-        <Border></Border>
         </>
       );
     }
@@ -25,20 +24,21 @@ text-align: left;
 position: relative;
 display:flex;
 margin:1em 3em;
-gap:10em;
-`;
-const Border = styled.div`
+gap:2em;
 border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
+img[src*="/images/logo.png"] {
+  max-width:190% ;
+  max-height:90%;
+}
 `;
 const Img = styled.div`
-width: 18px;
-padding:1em 3em;
+padding:1em 2em;
 margin:1em 1em 1em 0.1em;
 float: right;
 `;
 const Textbox = styled.div`
 width: 100%;
-margin:1em 3em 12em 1em;
+margin:1em 3em 1em;
 float: right;
 `;
 export default Infoplacard2;
