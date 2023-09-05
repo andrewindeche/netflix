@@ -156,7 +156,7 @@ const NavBar = styled.nav`
    top: 0;
    left:0;
    right: 0;
-   background-color: hsl(0,0%,0%,30%);
+   background-color: transparent;
    height: 110px;
    display: flex;
    justify-content: space-between;
