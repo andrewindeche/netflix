@@ -20,7 +20,8 @@ code {
   font-size:21px;
 }
 ::placeholder{
-  padding-left: 6px;
+  padding-left: 12px;
+  color:rgb(211,211,211)
 }
 @media only screen and (min-width: 1024px) {
   .container header .header-nav-area #nav_container  {

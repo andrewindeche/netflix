@@ -18,6 +18,7 @@ text-align: left;
 padding-top:1em;
 padding-left:14em;
 padding-bottom: 2em;
-border-bottom:solid #3A3B3C 6px;
+border-top:solid #3A3B3C 6px;
+border-bottom:solid #3A3B3C 3px;
 `;
 export default Infoplacard;

@@ -30,7 +30,6 @@ const Container = styled.div`
 text-align: center;
 padding:5em;
 font-size:22px;
-border-bottom:solid #3A3B3C 6px;
 line-height: 1.4em;
 `;
 const Introduction = styled.div`
@@ -50,7 +49,7 @@ padding: 6px 14px;
 margin:0 7em 2em;
 margin-left:0.5em;
 height:2.4em;
-border-radius:6px;
+border-radius:4px;
 border:0;
 text-align: center !important;
 font-size:24px;
@@ -60,9 +59,11 @@ button:hover{
   background-color:#DC143C;
 }
 input{
-height:3.5em;
+height:3.8em;
 width:25em;
-border-radius:6px;
+color:white !important;
+border:1px solid grey;
+border-radius:4px;
 background-color:hsl(0,0%,0%,0.5);
 font-size:15px;
 }
