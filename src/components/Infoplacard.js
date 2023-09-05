@@ -17,7 +17,7 @@ const Container = styled.div`
 text-align: left;
 padding-top:1em;
 padding-left:14em;
-padding-bottom: 2em;
+padding-bottom: 4em;
 border-top:solid hsla(0, 0%, 50%,30%) 8px;
 border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
 `;

@@ -34,7 +34,6 @@ const Img = styled.div`
 padding:1em 2em;
 margin:1em 1em 1em 0.1em;
 float: right;
-margin-bottom:4em
 `;
 const Textbox = styled.div`
 width: 100%;
