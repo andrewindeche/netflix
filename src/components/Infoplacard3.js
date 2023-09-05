@@ -25,7 +25,7 @@ const Infoplacard3 = ()=> {
       );
     }
 const Container2 = styled.div`
-padding:4em 4em 2em;
+padding:4em 4em 6em;
 position:relative;
 border-top:solid hsla(0, 0%, 50%,30%) 8px;
 border-bottom:solid hsla(0, 0%, 50%,30%) 8px;

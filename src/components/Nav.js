@@ -297,6 +297,8 @@ const NavMenu = styled.div`
 
 const Login = styled.a`
    background-color : red;
+   color:white;
+   text-decoration:none;
    font-size:14px;
    font-weight:normal;
    padding: 6px 14px;

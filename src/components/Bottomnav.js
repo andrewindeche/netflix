@@ -66,11 +66,11 @@ color:grey;
 text-decoration:underline;
 font-size:14px;
 line-height:1.6em;
-margin-top:50em;
-h4{
+padding:6em 14em;
+color:#D3D3D3;
+p{
 padding-left:3em;
 font-weight:regular;
-border-top:solid hsla(0, 0%, 50%,30%) 8px;
 }
 `;
 export default Bottomnav;
