@@ -168,7 +168,7 @@ const NavBar = styled.nav`
 
 const Logo = styled.a`
    width: 170px;
-   margin: 0px 130px;
+   margin: 0px 100px;
    max-height: 90px;
    font-size: 0px;
    display: inline-block;

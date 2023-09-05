@@ -10,15 +10,15 @@ const LandingPage = (props)=> {
         <div className="LandingPage"> 
         <Container>
         <Introduction>
-        <h1 id="intro-text">Unlimited movies,TV shows, and more.</h1>
+        <h1 id="intro-text">Unlimited movies,TV shows, and more</h1>
         <p id="intro-paragraph">Watch anywhere.Cancel anytime.</p>
         <p id="intro-paragraph">Ready to watch?Enter your email to create or restart your membership.</p>
         </Introduction>
         <Search>
         <form action="/action_page.php">
           <input type="text" placeholder="Email address" name="search"></input>
-          <button type="submit">Get Started <FontAwesomeIcon 
-       className = "icon" icon= {faChevronRight}/>  </button>
+          <button type="submit">Get Started<FontAwesomeIcon 
+          className = "icon" icon= {faChevronRight}/>  </button>
         </form>
       </Search>
         </Container>
@@ -28,29 +28,42 @@ const LandingPage = (props)=> {
     }
 const Container = styled.div`
 text-align: center;
-padding:4em;
-font-size:23px;
+padding:5em;
+font-size:22px;
 border-bottom:solid #3A3B3C 6px;
 line-height: 1.4em;
 `;
 const Introduction = styled.div`
-margin: 9em 2em 0;
+margin: 9em 1.5em 0;
 font-weight: bolder;
 `;
 
 const Search = styled.div`
-padding-right:7em;
+display:flex;
+align-items:center;
+margin:1em 10em;
 button {
-background-color:#DC143C;
+background-color:#FF0000;
 color:white;
-height:3em;
-width:9em;
-font-size:26px;
+font-weight:bold;
+padding: 6px 14px;
+margin:0 7em 2em;
+margin-left:0.5em;
+height:2.4em;
+border-radius:6px;
+border:0;
+text-align: center !important;
+font-size:24px;
 position: absolute;
   }
+button:hover{
+  background-color:#DC143C;
+}
 input{
-height:4.8em;
-width:35em;
+height:3.5em;
+width:25em;
+border-radius:6px;
+background-color:hsl(0,0%,0%,0.5);
 font-size:15px;
 }
 `;

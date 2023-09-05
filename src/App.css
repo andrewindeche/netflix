@@ -22,10 +22,11 @@ font-size:23px;
   padding: 0;
   width: 50px;
   border: 0;
+  text-align: center;
   background-color: #fff;
   color: #333;
   cursor: pointer;
-  font-weight: bolder;
+  font-weight: bold;
   outline: 0;
   font-size: 40px;
 }
