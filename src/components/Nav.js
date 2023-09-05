@@ -156,26 +156,26 @@ const NavBar = styled.nav`
    top: 0;
    left:0;
    right: 0;
-   background-color: #090b13;
-   height: 70px;
+   background-color: transparent;
+   height: 110px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 0 36px;
    letter-spacing: 16px;
-   z-index: 3;
+   z-index: 0.5;
 `;
 
 const Logo = styled.a`
    width: 170px;
-   margin-top: 30px;
+   margin: 0px 100px;
    max-height: 90px;
    font-size: 0px;
    display: inline-block;
    padding-bottom: 15px;
    img {
        display: block;
-       width: 100%;
+       width: 93%;
    }
 `;
 
@@ -297,18 +297,16 @@ const NavMenu = styled.div`
 
 const Login = styled.a`
    background-color : red;
-   font-size:16px;
-   padding: 4px 12px;
-   margin-top: 20px;
-   text-transform: lowercase;
-   letter-spacing: 1.5px;
-   border:1px solid #f9f9f9;
+   font-size:14px;
+   font-weight:normal;
+   padding: 6px 14px;
+   margin:0 7em 2em;
+   letter-spacing: 0.1px;
    border-radius: 4px;
    transition: all 250ms ease-out;
    cursor: pointer;
    &:hover{
-       background-color : #f9f9f9;
-       color: #000;
+       background-color : #8B0000;
        border-color: transparent;
    }
 `;

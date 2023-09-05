@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Bottomnav = (props)=> {
+const Bottomnav = ()=> {
   return(
         <>
-        <Allists>
+        <Container3>
         <p style={{paddingLeft:'1.5em'}}>Questions?Contact us.</p>
         <Firstlist>
         <ul>FAQ</ul>
@@ -34,7 +34,7 @@ const Bottomnav = (props)=> {
         <ul className="Hidden">Blank</ul>
         <ul className="Hidden">Blank</ul>
         </Forthlist>
-        </Allists>
+        </Container3>
         </>
       );
     }
@@ -42,31 +42,35 @@ const Bottomnav = (props)=> {
 const Firstlist = styled.div`
 display: inline-block;
 padding-right:6em;
+text-decoration:underline;
 `;
 const Secondlist = styled.div`
 position: relative;
 display: inline-block;
 padding-right:6em;
+text-decoration:underline;
 `;
 const Thirdlist = styled.div`
 position: relative;
 display: inline-block;
 padding-right:6em;
+text-decoration:underline;
 `;
 const Forthlist = styled.div`
 position: relative;
 display: inline-block;
+text-decoration:underline;
 `;
-const Allists = styled.div`
-padding-top:2em;
-padding-left:34em;
-padding-bottom:4em;
+const Container3 = styled.div`
 color:grey;
+text-decoration:underline;
 font-size:14px;
 line-height:1.6em;
+margin-top:50em;
 h4{
 padding-left:3em;
 font-weight:regular;
+border-top:solid hsla(0, 0%, 50%,30%) 8px;
 }
 `;
 export default Bottomnav;

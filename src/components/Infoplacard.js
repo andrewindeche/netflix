@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Infoplacard = (props)=> {
+const Infoplacard = ()=> {
   return(
         <>
         <Container>
         <h2>Watch everywhere.</h2>
-        <p>Stream unlimited movies and TV shows on</p>
-        <p>your phone, tablet, laptop, and TV.</p>
+        <p2>Stream unlimited movies and TV shows on</p2><br/>
+        <p2>your phone, tablet, laptop, and TV.</p2>
         </Container>
         </>
       );
@@ -18,6 +18,7 @@ text-align: left;
 padding-top:1em;
 padding-left:14em;
 padding-bottom: 2em;
-border-bottom:solid #3A3B3C 6px;
+border-top:solid hsla(0, 0%, 50%,30%) 8px;
+border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
 `;
 export default Infoplacard;

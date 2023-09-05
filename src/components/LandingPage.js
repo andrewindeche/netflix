@@ -4,20 +4,21 @@ import styled from 'styled-components';
 import { faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const LandingPage = (props)=> {
+const LandingPage = ()=> {
   return(
         <>
         <div className="LandingPage"> 
         <Container>
-        <h1>Unlimited movies,TV</h1>
-        <h1>shows, and more.</h1>
-        <h5>Watch anywhere.Cancel anytime.</h5>
-        <h6>Ready to watch?Enter your email to create or restart your membership.</h6>
+        <Introduction>
+        <h1 id="intro-text">Unlimited movies,TV shows, and more</h1>
+        <p id="intro-paragraph">Watch anywhere.Cancel anytime.</p>
+        <p id="intro-paragraph">Ready to watch?Enter your email to create or restart your membership.</p>
+        </Introduction>
         <Search>
         <form action="/action_page.php">
           <input type="text" placeholder="Email address" name="search"></input>
-          <button type="submit">Get Started <FontAwesomeIcon 
-       className = "icon" icon= {faChevronRight}/>  </button>
+          <button type="submit">Get Started<FontAwesomeIcon 
+          className = "icon" icon= {faChevronRight}/>  </button>
         </form>
       </Search>
         </Container>
@@ -27,24 +28,43 @@ const LandingPage = (props)=> {
     }
 const Container = styled.div`
 text-align: center;
-padding-top:4em;
-padding-bottom: 2.5em;
-border-bottom:solid #3A3B3C 6px;
+padding:5em;
+font-size:22px;
 line-height: 1.4em;
 `;
+const Introduction = styled.div`
+margin: 9em 1.5em 0;
+font-weight: bolder;
+`;
+
 const Search = styled.div`
-padding-right:7em;
+display:flex;
+align-items:center;
+margin:1em 10em;
 button {
-background-color:#DC143C;
+background-color:#FF0000;
 color:white;
-height:3em;
-width:9em;
-font-size:26px;
+font-weight:bold;
+padding: 6px 14px;
+margin:0 7em 2em;
+margin-left:0.5em;
+height:2.4em;
+border-radius:4px;
+border:0;
+text-align: center !important;
+font-size:24px;
 position: absolute;
   }
+button:hover{
+  background-color:#DC143C;
+}
 input{
-height:4.8em;
-width:35em;
+height:3.8em;
+width:25em;
+color:white !important;
+border:1px solid grey;
+border-radius:4px;
+background-color:hsl(0,0%,0%,0.5);
 font-size:15px;
 }
 `;
