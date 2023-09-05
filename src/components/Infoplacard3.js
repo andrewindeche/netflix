@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Infoplacard2 = (props)=> {
+const Infoplacard3 = ()=> {
   return(
         <>
           <Container2>
@@ -13,32 +13,33 @@ const Infoplacard2 = (props)=> {
           <h2>free plan!</h2>
           </H2>
           <br/>
-          <p>Watch a selection of new movies and TV</p>
-          <p>shows without adding any payment details!</p>
+          <p1>Watch a selection of new movies and TV</p1><br/>
+          <p1>shows without adding any payment details!</p1><br/>
           <p1>Get the app</p1><FontAwesomeIcon
            className = "icon" icon= {faChevronRight}/>
-        </Container2>
-        <Img>
-          <img src ='/images/en.png' alt=""/>
+           <Img>
+          <img src ='/images/en.png' alt="android"/>
           </Img>
+        </Container2>
         </>
       );
     }
 const Container2 = styled.div`
-padding-left:12em;
-position:absolute;
-padding-bottom: 2em;
+padding:4em 4em 2em;
+position:relative;
+border-top:solid hsla(0, 0%, 50%,30%) 8px;
+border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
+img[src*="/images/en.png"] {
+  position: relative;
+  flex-direction:column;
+}
 `;
 const H2 = styled.div`
 line-height: 0.2em;
 `;
 const Img = styled.div`
-text-align: left;
+display:inline-flex;
 float:right;
-position: relative;
-display:inline-block;
-padding-right:16em;
-position:relative;
-padding-bottom:3em;
+margin: -8em 3em;
 `;
-export default Infoplacard2;
+export default Infoplacard3;

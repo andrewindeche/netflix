@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Bottomnav = ()=> {
   return(
         <>
-        <Container>
+        <Container3>
         <p style={{paddingLeft:'1.5em'}}>Questions?Contact us.</p>
         <Firstlist>
         <ul>FAQ</ul>
@@ -34,7 +34,7 @@ const Bottomnav = ()=> {
         <ul className="Hidden">Blank</ul>
         <ul className="Hidden">Blank</ul>
         </Forthlist>
-        </Container>
+        </Container3>
         </>
       );
     }
@@ -61,15 +61,16 @@ position: relative;
 display: inline-block;
 text-decoration:underline;
 `;
-const Container = styled.div`
+const Container3 = styled.div`
 color:grey;
 text-decoration:underline;
 font-size:14px;
-padding:6em;
 line-height:1.6em;
+margin-top:50em;
 h4{
 padding-left:3em;
 font-weight:regular;
+border-top:solid hsla(0, 0%, 50%,30%) 8px;
 }
 `;
 export default Bottomnav;

@@ -24,21 +24,21 @@ text-align: left;
 position: relative;
 display:flex;
 margin:1em 3em;
-gap:2em;
-border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
+gap:3em;
 img[src*="/images/logo.png"] {
-  max-width:190% ;
-  max-height:90%;
+  width:150% ;
+  height:90%;
 }
 `;
 const Img = styled.div`
 padding:1em 2em;
 margin:1em 1em 1em 0.1em;
 float: right;
+margin-bottom:4em
 `;
 const Textbox = styled.div`
 width: 100%;
-margin:1em 3em 1em;
+margin:1em 2em 1em;
 float: right;
 `;
 export default Infoplacard2;
