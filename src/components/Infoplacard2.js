@@ -9,7 +9,7 @@ const Infoplacard2 = ()=> {
           <img src ='/images/logo.png' alt="netflix kids"/>
           </Img>
           <Textbox>
-          <h1>Create profiles for kids.</h1>
+          <h1 id="intro-text">Create profiles for kids.</h1>
           <p2>Send kids on adventures with their favorite</p2><br/>
           <p2>characters in a space made just for them—</p2><br/>
           <p2>free with your membership.</p2>

@@ -8,9 +8,9 @@ const Infoplacard3 = ()=> {
         <>
           <Container2>
           <H2>
-          <h2>Have an Android</h2>
-          <h2>Phone?Get our new</h2>
-          <h2>free plan!</h2>
+          <h1 id="intro-text">Have an Android</h1>
+          <h1 id="intro-text">Phone?Get our new</h1>
+          <h1 id="intro-text">free plan!</h1>
           </H2>
           <br/>
           <p1>Watch a selection of new movies and TV</p1><br/>
