@@ -67,5 +67,9 @@ const Container = styled.div`
 text-align: center;
 padding:4em;
 border-bottom:solid #3A3B3C 6px;
+#intro-text{
+  padding: 0.4em;
+  font-weight:bolder;
+}
 `;
 export default Faqs;
