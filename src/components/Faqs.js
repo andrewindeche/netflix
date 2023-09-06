@@ -5,7 +5,7 @@ const Faqs = ()=> {
   return(
         <>
         <Container>
-        <h1>Frequently Asked Questions</h1>
+        <h1 id="intro-text">Frequently Asked Questions</h1>
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>What is Netflix?</Accordion.Header>
