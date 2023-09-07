@@ -48,12 +48,13 @@ const optionMovies = [
        value: "Top Rated",
      },
    ];
-const Nav = (props) => {
+const Nav = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const userName = useSelector(selectUserName);
   const userPhoto = useSelector(selectUserPhoto);
   const [selector, setselector] = useState("");
+  const [show, setShow] = useState(false);
 
   const setUser = useCallback ((user) => {
       dispatch(
@@ -99,8 +100,23 @@ const Nav = (props) => {
            setselector(option);
        }
    }
+   const controlNavbar = () => {
+    if (window.scrollY > 250) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', controlNavbar);
+    };
+  }, []);
    return (
-        <NavBar>
+        <NavBar className={`active ${show && 'hidden'}`}>
             <Logo>
                 <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix" />
             </Logo>
@@ -152,7 +168,7 @@ const Nav = (props) => {
     );
 }
 const NavBar = styled.nav`
-   position: fixed;
+   position: relative;
    top: 0;
    left:0;
    right: 0;
