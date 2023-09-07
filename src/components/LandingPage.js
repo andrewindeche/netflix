@@ -33,7 +33,10 @@ font-size:22px;
 line-height: 1.4em;
 `;
 const Introduction = styled.div`
-margin: 9em 1.5em 0;
+display:flex;
+flex-direction: column;
+gap: 12px;
+margin: 3em 1.5em 0;
 font-weight: bolder;
 `;
 
@@ -61,10 +64,11 @@ button:hover{
 input{
 height:3.8em;
 width:25em;
+padding:1.2em;
 color:white !important;
 border:1px solid grey;
 border-radius:4px;
-background-color:hsl(0,0%,0%,0.5);
+background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
 }
 `;
