@@ -184,7 +184,7 @@ const NavBar = styled.nav`
 
 const Logo = styled.a`
    width: 170px;
-   margin: 0px 100px;
+   margin: 0px 120px;
    max-height: 90px;
    font-size: 0px;
    display: inline-block;
@@ -316,9 +316,9 @@ const Login = styled.a`
    color:white;
    text-decoration:none;
    font-size:14px;
-   font-weight:normal;
+   font-weight:bold;
    padding: 6px 14px;
-   margin:0 7em 2em;
+   margin:0 9em 2em;
    letter-spacing: 0.1px;
    border-radius: 4px;
    transition: all 250ms ease-out;
