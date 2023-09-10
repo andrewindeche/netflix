@@ -22,14 +22,14 @@ const Faqs = ()=> {
       </Accordion.Item>
       <Accordion.Item eventKey="1">
         <Accordion.Header><p className='header'>How much does Netflix cost?</p></Accordion.Header>
-        <Accordion.Body style={{backgroundColor:"#404040",color:"white"}}>
+        <Accordion.Body style={{color:"white"}}>
         Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one 
         fixed monthly fee. Plans range from Ksh 200 to Ksh 1,100 a month. No extra costs, no contracts.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header><p className='header'>Where can I watch?</p></Accordion.Header>
-        <Accordion.Body style={{backgroundColor:"#404040",color:"white"}}>
+        <Accordion.Body style={{color:"white"}}>
         Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com 
         from your personal computer or on any internet-connected device that offers the Netflix app, including 
         smart TVs, smartphones, tablets, streaming media players and game consoles.You can also download your 
@@ -39,21 +39,21 @@ const Faqs = ()=> {
       </Accordion.Item>
       <Accordion.Item eventKey="3">
         <Accordion.Header><p className='header'>How do i cancel?</p></Accordion.Header>
-        <Accordion.Body style={{backgroundColor:"#404040",color:"white"}}>
+        <Accordion.Body>
         Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account 
         online in two clicks. There are no cancellation fees – start or stop your account anytime.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="4">
         <Accordion.Header><p className='header'>What can I cancel on Netflix?</p></Accordion.Header>
-        <Accordion.Body style={{backgroundColor:"#404040",color:"white"}}>
+        <Accordion.Body style={{color:"white"}}>
         Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, 
         and more. Watch as much as you want, anytime you want.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="5">
         <Accordion.Header><p className='header'>Is Netflix good for kids?</p></Accordion.Header>
-        <Accordion.Body style={{backgroundColor:"#404040",color:"white"}}>
+        <Accordion.Body style={{color:"white"}}>
         The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly 
         TV shows and movies in their own space.Kids profiles come with PIN-protected parental controls that let you restrict 
         the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
