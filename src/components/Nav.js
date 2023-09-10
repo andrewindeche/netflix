@@ -173,11 +173,11 @@ const NavBar = styled.nav`
    left:0;
    right: 0;
    background-color: transparent;
-   height: 110px;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 0 36px;
+   padding: 0 45px;
+   margin:1em;
    letter-spacing: 16px;
    z-index: 0.5;
 `;
@@ -188,7 +188,6 @@ const Logo = styled.a`
    max-height: 90px;
    font-size: 0px;
    display: inline-block;
-   padding-bottom: 15px;
    img {
        display: block;
        width: 93%;
