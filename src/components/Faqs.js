@@ -78,18 +78,20 @@ text-align: center;
 padding:4em;
 border-bottom:solid #3A3B3C 6px;
 .accordion{
-  --bs-accordion-bg: #3A3B3C;
+  --bs-accordion-bg: rgb(45,45,45);
   width: 90%;
   margin:1.3em;
 }
 .accordion-button {
   color: white; 
   margin: 12px auto;
-  height: 6em;
+  height: 5.5em;
+  border-radius: 0 !important;
 }
 .accordion-item {
   border: none;
 }
+
 #intro-text{
   font-weight: bolder;
   letter-spacing: 0.4px;
