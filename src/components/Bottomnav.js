@@ -5,7 +5,7 @@ const Bottomnav = ()=> {
   return(
         <>
         <Container3>
-        <p style={{paddingLeft:'1.5em'}}>Questions?Contact us.</p>
+        <ul style={{paddingLeft:'2.1em'}}>Questions?Contact us.</ul>
         <Firstlist>
         <ul>FAQ</ul>
         <ul>Investor Relations</ul>
