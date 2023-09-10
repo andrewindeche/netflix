@@ -11,7 +11,7 @@ const Faqs = ()=> {
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header><p className='header'>What is Netflix?</p></Accordion.Header>
-        <Accordion.Body style={{backgroundColor:"#404040",color:"white"}}>
+        <Accordion.Body style={{color:"white"}}>
           Netflix is a streaming service that offers a wide variety of award-winning TV shows,
           movies, anime, documentaries, and more on thousands of internet-connected devices.
           <br/>
@@ -84,7 +84,7 @@ border-bottom:solid #3A3B3C 6px;
 }
 .accordion-button {
   color: white; 
-  margin: 12px auto;
+  margin: 10px auto;
   height: 5.5em;
   border-radius: 0 !important;
 }
