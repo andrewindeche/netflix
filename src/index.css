@@ -11,28 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#intro-text{
-  font-weight: bolder;
-  letter-spacing: 0.4px;
-}
-#intro-paragraph{
-  font-weight:50;
-  font-size:21px;
-}
 ::placeholder{
   padding-left: 12px;
   color:rgb(211,211,211)
 }
+
 @media only screen and (min-width: 600px) and (max-width: 1280px) {
   .container header .header-nav-area #nav_container  {
     display:flex;
   }
-}
-.accordion{
-  --bs-accordion-bg: #3A3B3C;
-  width: 90%;
-  margin:1.3em;
-}
-.accordion-button {
-  color: white; 
 }

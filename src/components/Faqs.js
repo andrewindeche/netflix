@@ -39,7 +39,7 @@ const Faqs = ()=> {
       </Accordion.Item>
       <Accordion.Item eventKey="3">
         <Accordion.Header><p className='header'>How do i cancel?</p></Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body style={{color:"white"}}>
         Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account 
         online in two clicks. There are no cancellation fees – start or stop your account anytime.
         </Accordion.Body>
@@ -77,6 +77,29 @@ const Container = styled.div`
 text-align: center;
 padding:4em;
 border-bottom:solid #3A3B3C 6px;
+.accordion{
+  --bs-accordion-bg: rgb(45,45,45);
+  width: 90%;
+  margin:1.3em;
+}
+.accordion-button {
+  color: white; 
+  margin: 12px auto;
+  height: 5.5em;
+  border-radius: 0 !important;
+}
+.accordion-item {
+  border: none;
+}
+
+#intro-text{
+  font-weight: bolder;
+  letter-spacing: 0.4px;
+}
+#intro-paragraph{
+  font-weight:50;
+  font-size:21px;
+}
 `;
 const Search = styled.div`
 display:flex;
