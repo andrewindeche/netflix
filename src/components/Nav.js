@@ -173,7 +173,6 @@ const NavBar = styled.nav`
    left:0;
    right: 0;
    background-color: transparent;
-   height: 110px;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -188,7 +187,6 @@ const Logo = styled.a`
    max-height: 90px;
    font-size: 0px;
    display: inline-block;
-   padding-bottom: 15px;
    img {
        display: block;
        width: 93%;
