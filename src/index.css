@@ -35,4 +35,5 @@ code {
 }
 .accordion-button {
   color: white; 
+  margin: 12px auto;
 }

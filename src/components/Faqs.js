@@ -39,7 +39,7 @@ const Faqs = ()=> {
       </Accordion.Item>
       <Accordion.Item eventKey="3">
         <Accordion.Header><p className='header'>How do i cancel?</p></Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body style={{color:"white"}}>
         Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account 
         online in two clicks. There are no cancellation fees – start or stop your account anytime.
         </Accordion.Body>
