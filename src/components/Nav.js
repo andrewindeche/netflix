@@ -176,7 +176,8 @@ const NavBar = styled.nav`
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 0 36px;
+   padding: 0 45px;
+   margin:1em;
    letter-spacing: 16px;
    z-index: 0.5;
 `;

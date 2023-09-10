@@ -31,6 +31,8 @@ code {
 .accordion{
   --bs-accordion-bg: #3A3B3C;
   width: 90%;
-  margin:1.5em;
+  margin:1.3em;
 }
-
+.accordion-button {
+  color: white; 
+}
