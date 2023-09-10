@@ -77,6 +77,27 @@ const Container = styled.div`
 text-align: center;
 padding:4em;
 border-bottom:solid #3A3B3C 6px;
+.accordion{
+  --bs-accordion-bg: #3A3B3C;
+  width: 90%;
+  margin:1.3em;
+}
+.accordion-button {
+  color: white; 
+  margin: 12px auto;
+  height: 6em;
+}
+.accordion-item {
+  border: none;
+}
+#intro-text{
+  font-weight: bolder;
+  letter-spacing: 0.4px;
+}
+#intro-paragraph{
+  font-weight:50;
+  font-size:21px;
+}
 `;
 const Search = styled.div`
 display:flex;
