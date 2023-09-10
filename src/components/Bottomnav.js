@@ -66,7 +66,7 @@ color:grey;
 text-decoration:underline;
 font-size:14px;
 line-height:1.6em;
-padding:6em 14em;
+padding:6em 8em;
 color:#D3D3D3;
 p{
 padding-left:3em;
