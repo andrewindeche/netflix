@@ -11,6 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#intro-text{
+  font-weight: bolder;
+  letter-spacing: 0.4px;
+}
 ::placeholder{
   padding-left: 12px;
   color:rgb(211,211,211)

@@ -92,10 +92,6 @@ border-bottom:solid #3A3B3C 6px;
   border: none;
 }
 
-#intro-text{
-  font-weight: bolder;
-  letter-spacing: 0.4px;
-}
 #intro-paragraph{
   font-weight:50;
   font-size:21px;
