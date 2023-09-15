@@ -10,6 +10,10 @@ margin-right:6em;
 margin-top:-4.8em;
 border-radius: 6px;
 }
+p{
+line-height: 1.2 em;
+font-size:23px;
+}
 .container {
   position: relative;
   display: inline-block;

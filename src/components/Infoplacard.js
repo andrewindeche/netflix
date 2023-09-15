@@ -6,8 +6,8 @@ const Infoplacard = ()=> {
         <>
         <Container>
         <h1 id="intro-text">Watch everywhere.</h1>
-        <p2>Stream unlimited movies and TV shows on</p2><br/>
-        <p2>your phone, tablet, laptop, and TV.</p2>
+          Stream unlimited movies and TV shows on<br/>
+          your phone, tablet, laptop, and TV.
         </Container>
         </>
       );
