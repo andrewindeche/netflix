@@ -28,7 +28,7 @@ const LandingPage = ()=> {
     }
 const Container = styled.div`
 text-align: center;
-padding:5em;
+padding:8em;
 font-size:22px;
 line-height: 1.4em;
 z-index:1;
@@ -41,7 +41,7 @@ const Introduction = styled.div`
 display:flex;
 flex-direction: column;
 gap: 12px;
-margin: 3em 1.5em 0;
+margin: 5em 1.5em 0;
 font-weight: bolder;
 /* Use flexbox to align items */
 @media (max-width: 768px) {
