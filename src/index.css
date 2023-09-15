@@ -20,19 +20,3 @@ code {
   color:rgb(211,211,211)
 }
 
-@media (max-width: 600px) {
-  #intro-text{
-    font-size:smaller;
-  }
-  #intro-paragraph{
-    font-size: x-small;
-  }
-  .p{
-    font-size: smaller;
-  }
-}
-@media only screen and (max-width: 600px) and (min-width: 1280px) {
-  .container header .header-nav-area #nav_container  {
-    display:flex;
-  }
-}

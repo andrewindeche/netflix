@@ -13,9 +13,9 @@ const Infoplacard3 = ()=> {
           <h1 id="intro-text">free plan!</h1>
           </H2>
           <br/>
-          <p1>Watch a selection of new movies and TV</p1><br/>
-          <p1>shows without adding any payment details!</p1><br/>
-          <p1>Get the app</p1><FontAwesomeIcon
+          <p>Watch a selection of new movies and TV</p><br/>
+          <p>shows without adding any payment details!</p><br/>
+          <p>Get the app</p><FontAwesomeIcon
            className = "icon" icon= {faChevronRight}/>
            <Img>
           <img src ='/images/en.png' alt="android"/>
