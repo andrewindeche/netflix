@@ -31,6 +31,11 @@ text-align: center;
 padding:5em;
 font-size:22px;
 line-height: 1.4em;
+z-index:1;
+/* Use relative units for font size */
+@media (max-width: 768px) {
+  font-size: 1.2rem;
+}
 `;
 const Introduction = styled.div`
 display:flex;
@@ -38,6 +43,10 @@ flex-direction: column;
 gap: 12px;
 margin: 3em 1.5em 0;
 font-weight: bolder;
+/* Use flexbox to align items */
+@media (max-width: 768px) {
+  align-items: center;
+}
 `;
 
 const Search = styled.div`
@@ -57,7 +66,12 @@ border:0;
 text-align: center !important;
 font-size:24px;
 position: absolute;
-  }
+/* Use relative units for height and width */
+@media (max-width: 768px) {
+  height: 2rem;
+  width: 8rem;
+}
+}
 button:hover{
   background-color:#DC143C;
 }
@@ -70,6 +84,15 @@ border:1px solid grey;
 border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
+/* Use relative units for height and width */
+@media (max-width: 768px) {
+  *{
+    font-size: small;
+  }
+  height: 2rem;
+  width: 15rem;
+}
 }
 `;
 export default LandingPage;
+
