@@ -24,8 +24,8 @@ code {
 }
 
 @media only screen and (max-width: 768px){
-  body{
-    width:min-content;
+  *{
+    font-size: 12px;
   }
 }
 
