@@ -32,6 +32,7 @@ padding:8em;
 font-size:22px;
 line-height: 1.4em;
 z-index:1;
+
 `;
 const Introduction = styled.div`
 display:flex;
@@ -58,6 +59,7 @@ border:0;
 text-align: center !important;
 font-size:24px;
 position: absolute;
+
 }
 button:hover{
   background-color:#DC143C;
@@ -71,6 +73,7 @@ border:1px solid grey;
 border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
+
 }
 `;
 export default LandingPage;

@@ -323,6 +323,7 @@ const Login = styled.a`
        background-color : #8B0000;
        border-color: transparent;
    }
+  
 `;
 
 const UserImage = styled.img`
