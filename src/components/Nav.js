@@ -183,7 +183,6 @@ const NavBar = styled.nav`
    @media (max-width: 768px) {
     display:grid;
     justify-content: center;
-    align-content: center;
   }
 `;
 
@@ -327,6 +326,13 @@ const Login = styled.a`
    margin:0 9em 2em;
    letter-spacing: 0.1px;
    border-radius: 4px;
+   @media (max-width: 768px) {
+        width: 18%;
+        font-size:10px;
+        position: absolute;
+        right:0;
+        margin: 5px 4em auto;
+    }
    transition: all 250ms ease-out;
    cursor: pointer;
    &:hover{
