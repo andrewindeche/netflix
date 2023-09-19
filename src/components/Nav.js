@@ -198,7 +198,7 @@ const Logo = styled.a`
    @media (max-width: 768px) {
     img {
         width: 40%;
-        margin:0.5em -7em;
+        margin:0.5em -7.5em;
         left:0;
     }
   }
@@ -328,7 +328,8 @@ const Login = styled.a`
    letter-spacing: 0.1px;
    border-radius: 4px;
    @media (max-width: 768px) {
-        width: 18%;
+        width: 17%;
+        padding:0.4em 0.2em 5px 12px;
         font-size:10px;
         position: absolute;
         right:4;

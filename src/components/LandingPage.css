@@ -17,10 +17,10 @@
             content: "\a";
             white-space: pre;
         }
-        #intro-paragraph{
+        #third-line,#intro-paragraph{
             font-size:small;
             font-weight: 100;
-            line-height: 1.2em;
+            line-height: 1.1em;
         }
         #third-line::after{
             content: "\a";
@@ -29,6 +29,9 @@
         #fourth-line::after{
             content: "\a";
             white-space: pre;
+        }
+        #third-line{
+            padding-top:-1px;
         }
      }
 

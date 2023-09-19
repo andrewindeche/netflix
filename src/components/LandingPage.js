@@ -12,7 +12,7 @@ const LandingPage = ()=> {
         <Introduction>
         <h1 id="intro-text"><span id="first-line">Unlimited movies,TV</span><span id="second-line"> shows,and more</span></h1>
         <p id="intro-paragraph">Watch anywhere.Cancel anytime.</p>
-        <p id="intro-paragraph"><span id="third-line">Ready to watch?Enter your email</span><span id="fourth-line"> to create or restart your</span><span id="fifth-line"> membership.</span></p>
+        <p><span id="third-line">Ready to watch?Enter your email</span><span id="fourth-line"> to create or restart your</span><span id="fifth-line"> membership.</span></p>
         </Introduction>
         <Search>
         <form action="/action_page.php">
@@ -37,8 +37,8 @@ z-index:1;
 const Introduction = styled.div`
 display:flex;
 flex-direction: column;
-gap: 12px;
-margin: 5em 1.5em 0;
+gap: 8px;
+margin: 6em 1.5em 0;
 font-weight: bolder;
 `;
 
@@ -66,11 +66,13 @@ position: absolute;
   width:11em;
   height:3em;
   padding:1em -0.5em -3em;
+  .icon{
+    width: 30%;
+  }
+  .button{
+    width: 50%;
+  }
 }
-.icon{
-  width: 30%;
-}
-
 }
 button:hover{
   background-color:#DC143C;
@@ -85,7 +87,7 @@ border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
 @media only screen and (max-width: 768px){
-  width:18em;
+  width:15em;
   height:2em;
   font-size:12px;
 }
