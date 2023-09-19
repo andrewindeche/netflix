@@ -64,13 +64,16 @@ font-size:24px;
 position: absolute;
 @media only screen and (max-width: 768px){
   display:block;
-  font-size:12px;
+  font-size:14px;
+  font-weight: bold;
   margin: 14px 30px;
   width:11em;
   height:3em;
-  padding: 2px;
+  padding: 8px 15px;
+  display:block;
   .icon{
-    width: 7%;
+    padding:1px
+    width: 20%;
       }
     }
 }
