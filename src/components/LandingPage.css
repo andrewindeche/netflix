@@ -6,8 +6,16 @@
         .LandingPage{
             display: grid;
             width: 280px;
+            margin: 6em;
             justify-content: center;
             align-content: center;
+        }
+        #first-line,#second-line{
+            font-size: 21px;
+        }
+        #first-line::after{
+            content: "\a";
+            white-space: pre;
         }
      }
 
