@@ -194,12 +194,12 @@ const Logo = styled.a`
    font-size: 0px;
    display: inline-block;
    img {
-       display: block;
        width: 93%;
    }
    @media (max-width: 768px) {
     img {
-        width: 43%;
+        width: 40%;
+        margin:5px -8px;
     }
   }
 `;
