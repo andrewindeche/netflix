@@ -6,9 +6,10 @@
         .LandingPage{
             display: grid;
             width: 264px;
-            margin: 2em 0em;
+            height: 400px;
             justify-content: center;
             align-content: center;
+            padding:0em 3em 1em ;
         }
         #first-line,#second-line{
             font-size: 20px;
@@ -17,10 +18,10 @@
             content: "\a";
             white-space: pre;
         }
-        #third-line,#intro-paragraph{
+        #third-line,#intro-paragraph,#fourth-line,#fifth-line{
             font-size:small;
             font-weight: 100;
-            line-height: 1.1em;
+            line-height: 0.8em;
         }
         #third-line::after{
             content: "\a";
