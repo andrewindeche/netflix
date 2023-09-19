@@ -6,12 +6,12 @@
         .LandingPage{
             display: grid;
             width: 264px;
-            margin: 0em;
+            margin: 2em 0em;
             justify-content: center;
             align-content: center;
         }
         #first-line,#second-line{
-            font-size: 21px;
+            font-size: 20px;
         }
         #first-line::after{
             content: "\a";
@@ -20,7 +20,7 @@
         #intro-paragraph{
             font-size:small;
             font-weight: 100;
-            line-height: 1.5em;
+            line-height: 1.2em;
         }
         #third-line::after{
             content: "\a";
