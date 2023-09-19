@@ -5,8 +5,8 @@
     @media only screen and (max-width: 768px){
         .LandingPage{
             display: grid;
-            width: 280px;
-            margin: 6em;
+            width: 260px;
+            margin: 0em;
             justify-content: center;
             align-content: center;
         }

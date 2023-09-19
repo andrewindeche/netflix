@@ -50,7 +50,7 @@ button {
 background-color:#FF0000;
 color:white;
 font-weight:bold;
-padding: 6px 14px;
+padding: 10px 30px;
 margin:0 7em 2em;
 margin-left:0.5em;
 height:2.4em;
@@ -59,6 +59,17 @@ border:0;
 text-align: center !important;
 font-size:24px;
 position: absolute;
+@media only screen and (max-width: 768px){
+  display:block;
+  font-size:12px;
+  margin: 14px 30px;
+  width:11em;
+  height:3em;
+  padding:1em -0.5em -3em;
+}
+.icon{
+  width: 30%;
+}
 
 }
 button:hover{
@@ -67,15 +78,15 @@ button:hover{
 input{
 height:3.8em;
 width:25em;
-padding:1.2em;
+padding:1.2em 0.4em;
 color:white !important;
 border:1px solid grey;
 border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
 @media only screen and (max-width: 768px){
-  width:16em;
-  height:3em;
+  width:18em;
+  height:2em;
   font-size:12px;
 }
 }

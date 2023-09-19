@@ -198,7 +198,8 @@ const Logo = styled.a`
    @media (max-width: 768px) {
     img {
         width: 40%;
-        margin:5px -8px;
+        margin:0.5em -7em;
+        left:0;
     }
   }
 `;
@@ -330,8 +331,8 @@ const Login = styled.a`
         width: 18%;
         font-size:10px;
         position: absolute;
-        right:0;
-        margin: 5px 4em auto;
+        right:4;
+        margin: 2px 17em auto;
     }
    transition: all 250ms ease-out;
    cursor: pointer;
