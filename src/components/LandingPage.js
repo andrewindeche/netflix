@@ -64,16 +64,17 @@ font-size:24px;
 position: absolute;
 @media only screen and (max-width: 768px){
   display:block;
-  font-size:14px;
+  font-size:12px;
   font-weight: bold;
   margin: 14px 30px;
-  width:11em;
+  width:9em;
   height:3em;
-  padding: 8px 15px;
-  display:block;
+  padding: 5px 2px;
+  display:grid;
   .icon{
-    padding:1px
-    width: 20%;
+    width: 30%;
+    grid-area: 1/2;
+    padding: 1px 0px 6px;
       }
     }
 }
