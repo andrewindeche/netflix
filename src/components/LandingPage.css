@@ -1,6 +1,6 @@
 .LandingPage{
     background-image:linear-gradient(to bottom,rgba(0,0,0,0)60%,rgba(0,0,0,2)),linear-gradient(to top,rgba(0,0,0,0)90%,rgba(0,0,0,4)), url(../bg.jpg);
-    height:27em;
+    height:24em;
     }
     @media only screen and (max-width: 768px){
         .LandingPage{
@@ -20,7 +20,7 @@
         #intro-paragraph{
             font-size:small;
             font-weight: 100;
-            gap: 1em;
+            line-height: 1.5em;
         }
         #third-line::after{
             content: "\a";

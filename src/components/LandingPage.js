@@ -30,7 +30,7 @@ const Container = styled.div`
 text-align: center;
 padding:8em;
 font-size:22px;
-line-height: 1.4em;
+line-height: 1em;
 z-index:1;
 
 `;
