@@ -180,6 +180,11 @@ const NavBar = styled.nav`
    margin:1em;
    letter-spacing: 16px;
    z-index: 0.5;
+   @media (max-width: 768px) {
+    display:grid;
+    justify-content: center;
+    align-content: center;
+  }
 `;
 
 const Logo = styled.a`
@@ -192,6 +197,11 @@ const Logo = styled.a`
        display: block;
        width: 93%;
    }
+   @media (max-width: 768px) {
+    img {
+        width: 43%;
+    }
+  }
 `;
 
 const Drop = styled.div`
