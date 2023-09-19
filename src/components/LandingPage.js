@@ -18,7 +18,7 @@ const LandingPage = ()=> {
         <form action="/action_page.php">
           <input type="text" placeholder="Email address" name="search"></input>
           <button type="submit">Get Started<FontAwesomeIcon 
-          className = "icon" icon= {faChevronRight}/>  </button>
+          className = "icon" icon= {faChevronRight}/></button>
         </form>
       </Search>
         </Container>
@@ -68,14 +68,11 @@ position: absolute;
   margin: 14px 30px;
   width:11em;
   height:3em;
-  padding:1em -0.5em -3em;
+  padding: 2px;
   .icon{
-    width: 30%;
-  }
-  .button{
-    width: 50%;
-  }
-}
+    width: 7%;
+      }
+    }
 }
 button:hover{
   background-color:#DC143C;
@@ -90,7 +87,7 @@ border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
 @media only screen and (max-width: 768px){
-  width:15em;
+  width:16em;
   height:2em;
   font-size:12px;
 }
