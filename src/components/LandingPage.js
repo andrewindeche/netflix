@@ -73,7 +73,11 @@ border:1px solid grey;
 border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
-
+@media only screen and (max-width: 768px){
+  width:16em;
+  height:3em;
+  font-size:12px;
+}
 }
 `;
 export default LandingPage;
