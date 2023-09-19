@@ -17,6 +17,19 @@
             content: "\a";
             white-space: pre;
         }
+        #intro-paragraph{
+            font-size:small;
+            font-weight: 100;
+            gap: 1em;
+        }
+        #third-line::after{
+            content: "\a";
+            white-space: pre;
+        }
+        #fourth-line::after{
+            content: "\a";
+            white-space: pre;
+        }
      }
 
 

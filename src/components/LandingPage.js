@@ -12,7 +12,7 @@ const LandingPage = ()=> {
         <Introduction>
         <h1 id="intro-text"><span id="first-line">Unlimited movies,TV</span><span id="second-line"> shows,and more</span></h1>
         <p id="intro-paragraph">Watch anywhere.Cancel anytime.</p>
-        <p id="intro-paragraph">Ready to watch?Enter your email to create or restart your membership.</p>
+        <p id="intro-paragraph"><span id="third-line">Ready to watch?Enter your email</span><span id="fourth-line"> to create or restart your</span><span id="fifth-line"> membership.</span></p>
         </Introduction>
         <Search>
         <form action="/action_page.php">
