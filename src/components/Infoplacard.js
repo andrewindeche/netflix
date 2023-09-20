@@ -7,7 +7,7 @@ const Infoplacard = ()=> {
         <Container>
         <h1 id="intro-text">Watch everywhere.</h1>
         <span id="first-line">Stream unlimited movies and TV shows</span>
-        <span id="second-line">on your phone, tablet, laptop, and TV.</span>
+        <span id="second-line">on your phone, tablet, laptop,and TV.</span>
         </Container>
         </>
       );
@@ -24,6 +24,7 @@ const Container = styled.div`
 @media only screen and (max-width: 768px){
   margin: 1rem -11rem;
   line-height: 2;
+  width:fit-content;
   gap:10px;
   #first-line,#second-line{
     font-size: 13px;
