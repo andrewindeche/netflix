@@ -6,19 +6,32 @@ const Infoplacard = ()=> {
         <>
         <Container>
         <h1 id="intro-text">Watch everywhere.</h1>
-          Stream unlimited movies and TV shows on<br/>
-          your phone, tablet, laptop, and TV.
+        <span id="first-line">Stream unlimited movies and TV shows</span>
+        <span id="second-line">on your phone, tablet, laptop, and TV.</span>
         </Container>
         </>
       );
     }
 
 const Container = styled.div`
-text-align: left;
-padding-top:1em;
-padding-left:14em;
-padding-bottom: 4em;
-border-top:solid hsla(0, 0%, 50%,30%) 8px;
-border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
+  text-align: left;
+  display: grid;
+  padding-top:1em;
+  padding-left:14em;
+  padding-bottom: 4em;
+  border-top:solid hsla(0, 0%, 50%,30%) 8px;
+  border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
+@media only screen and (max-width: 768px){
+  margin: 1rem -11rem;
+  line-height: 2;
+  gap:10px;
+  #first-line,#second-line{
+    font-size: 13px;
+    line-height: 12px;
+    align-self: right;
+    float: left;
+  }
+  
+}
 `;
 export default Infoplacard;
