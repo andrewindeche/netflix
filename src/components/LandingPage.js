@@ -10,15 +10,15 @@ const LandingPage = ()=> {
         <div className="LandingPage"> 
         <Container>
         <Introduction>
-        <h1 id="intro-text">Unlimited movies,TV shows, and more</h1>
+        <h1 id="intro-text"><span id="first-line">Unlimited movies,TV</span><span id="second-line"> shows,and more</span></h1>
         <p id="intro-paragraph">Watch anywhere.Cancel anytime.</p>
-        <p id="intro-paragraph">Ready to watch?Enter your email to create or restart your membership.</p>
+        <p><span id="third-line">Ready to watch?Enter your email</span><span id="fourth-line"> to create or restart your</span><span id="fifth-line"> membership.</span></p>
         </Introduction>
         <Search>
         <form action="/action_page.php">
           <input type="text" placeholder="Email address" name="search"></input>
           <button type="submit">Get Started<FontAwesomeIcon 
-          className = "icon" icon= {faChevronRight}/>  </button>
+          className = "icon" icon= {faChevronRight}/></button>
         </form>
       </Search>
         </Container>
@@ -28,16 +28,21 @@ const LandingPage = ()=> {
     }
 const Container = styled.div`
 text-align: center;
-padding:5em;
+padding:8em;
 font-size:22px;
-line-height: 1.4em;
+line-height: 1em;
+z-index:1;
+
 `;
 const Introduction = styled.div`
 display:flex;
 flex-direction: column;
-gap: 12px;
-margin: 3em 1.5em 0;
+gap: 8px;
+margin: 6em 1.5em 0;
 font-weight: bolder;
+@media only screen and (max-width: 768px){
+  margin:11px
+}
 `;
 
 const Search = styled.div`
@@ -48,7 +53,7 @@ button {
 background-color:#FF0000;
 color:white;
 font-weight:bold;
-padding: 6px 14px;
+padding: 10px 30px;
 margin:0 7em 2em;
 margin-left:0.5em;
 height:2.4em;
@@ -57,19 +62,40 @@ border:0;
 text-align: center !important;
 font-size:24px;
 position: absolute;
-  }
+@media only screen and (max-width: 768px){
+  display:block;
+  font-size:12px;
+  font-weight: bold;
+  margin: 14px 30px;
+  width:9em;
+  height:3em;
+  padding: 5px 2px;
+  display:grid;
+  .icon{
+    width: 30%;
+    grid-area: 1/2;
+    padding: 1px 0px 6px;
+      }
+    }
+}
 button:hover{
   background-color:#DC143C;
 }
 input{
 height:3.8em;
 width:25em;
-padding:1.2em;
+padding:1.2em 0.4em;
 color:white !important;
 border:1px solid grey;
 border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
+@media only screen and (max-width: 768px){
+  width:16em;
+  height:2em;
+  font-size:12px;
+}
 }
 `;
 export default LandingPage;
+

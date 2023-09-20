@@ -1,4 +1,66 @@
 .LandingPage{
-    background-image:linear-gradient(to bottom,rgba(0,0,0,0)60%,rgba(0,0,0,2)),linear-gradient(to top,rgba(0,0,0,0)90%,rgba(0,0,0,8)), url(../bg.jpg);
-    height:27em;
+    background-image:linear-gradient(to bottom,rgba(0,0,0,0)60%,rgba(0,0,0,2)),linear-gradient(to top,rgba(0,0,0,0)90%,rgba(0,0,0,4)), url(../bg.jpg);
+    height:24em;
     }
+    @media only screen and (max-width: 768px){
+        .LandingPage{
+            display: grid;
+            width: 264px;
+            height: 400px;
+            justify-content: center;
+            align-content: center;
+            padding:0em 3em 1em ;
+        }
+        #first-line,#second-line{
+            font-size: 20px;
+        }
+        #first-line::after{
+            content: "\a";
+            white-space: pre;
+        }
+        #third-line,#intro-paragraph,#fourth-line,#fifth-line{
+            font-size:small;
+            font-weight: 100;
+            line-height: 0.8em;
+        }
+        #third-line::after{
+            content: "\a";
+            white-space: pre;
+        }
+        #fourth-line::after{
+            content: "\a";
+            white-space: pre;
+        }
+        #third-line{
+            padding-top:-1px;
+        }
+     }
+
+
+
+     /* display: grid;
+            grid-template-columns: 50px minmax(1000x 500px) 100px;
+
+
+            width: 100px;
+            grid-template-columns: 1fr 60px 1fr;
+
+
+            grid-template-areas:"header header"
+                      "nav nav"
+                      "left right"
+                      "footer footer";
+        }
+        .right {
+            background-color: beige;
+            grid-area: 4 / 5 / 9 / 7;
+            display:grid;
+            align-items: end;
+
+            grid-template-columns: 250px 250px;
+            grid-template-rows: repeat(3, 450px);
+            gap: 20px;
+            justify-content: center;
+            align-items: stretch;
+            align-content: center;
+          }*/

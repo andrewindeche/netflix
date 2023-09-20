@@ -168,7 +168,7 @@ const Nav = () => {
     );
 }
 const NavBar = styled.nav`
-   position: relative;
+   position: absolute;
    top: 0;
    left:0;
    right: 0;
@@ -180,6 +180,10 @@ const NavBar = styled.nav`
    margin:1em;
    letter-spacing: 16px;
    z-index: 0.5;
+   @media (max-width: 768px) {
+    display:grid;
+    justify-content: center;
+  }
 `;
 
 const Logo = styled.a`
@@ -189,9 +193,15 @@ const Logo = styled.a`
    font-size: 0px;
    display: inline-block;
    img {
-       display: block;
        width: 93%;
    }
+   @media (max-width: 768px) {
+    img {
+        width: 40%;
+        margin:0.5em -7.5em;
+        left:0;
+    }
+  }
 `;
 
 const Drop = styled.div`
@@ -305,9 +315,6 @@ const NavMenu = styled.div`
            }
        }
    }
-   @media (max-width: 768px) {
-       display: none;
-   }
 `;
 
 const Login = styled.a`
@@ -320,12 +327,21 @@ const Login = styled.a`
    margin:0 9em 2em;
    letter-spacing: 0.1px;
    border-radius: 4px;
+   @media (max-width: 768px) {
+        width: 17%;
+        padding:0.4em 0.2em 5px 12px;
+        font-size:10px;
+        position: absolute;
+        right:4;
+        margin: 2px 17em auto;
+    }
    transition: all 250ms ease-out;
    cursor: pointer;
    &:hover{
        background-color : #8B0000;
        border-color: transparent;
    }
+  
 `;
 
 const UserImage = styled.img`

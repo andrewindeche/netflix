@@ -10,9 +10,9 @@ const Infoplacard2 = ()=> {
           </Img>
           <Textbox>
           <h1 id="intro-text">Create profiles for kids.</h1>
-          <p2>Send kids on adventures with their favorite</p2><br/>
-          <p2>characters in a space made just for them—</p2><br/>
-          <p2>free with your membership.</p2>
+            Send kids on adventures with their favorite<br/>
+            characters in a space made just for them—<br/>
+            free with your membership.
           </Textbox>
         </Container>
         </>
