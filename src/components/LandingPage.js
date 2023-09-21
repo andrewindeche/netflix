@@ -65,18 +65,20 @@ position: absolute;
 @media only screen and (max-width: 768px){
   font-size:12px;
   font-weight: bold;
-  margin: 14px 30px;
-  width:9em;
+  margin: 14px 40px;
+  width:10em;
   height:3em;
-  padding: 5px 2px;
-  display:grid;
+  border-radius: 2px;
+  padding: 8px 13px;
+  display:flex;
   .icon{
-    width: 30%;
-    grid-area: 1/2;
-    padding: 1px 0px 6px;
+    width: 10%;
+    padding-left: 7px;
+    padding-top: 1.3px;
       }
     }
 }
+
 button:hover{
   background-color:#DC143C;
 }
