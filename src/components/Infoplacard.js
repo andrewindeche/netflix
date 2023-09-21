@@ -29,8 +29,10 @@ const Container = styled.div`
   #first-line,#second-line{
     font-size: 13px;
     line-height: 12px;
-    align-self: right;
-    float: left;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: start;
   }
   
 }

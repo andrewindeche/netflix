@@ -25,6 +25,11 @@ position: relative;
 display:flex;
 margin:1em 3em;
 gap:3em;
+@media only screen and (max-width: 768px){
+  display: flex;
+  flex-flow: column;
+  margin:auto;
+ }
 img[src*="/images/logo.png"] {
   width:150% ;
   height:90%;
