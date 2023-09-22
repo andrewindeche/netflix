@@ -182,6 +182,7 @@ const NavBar = styled.nav`
    z-index: 0.5;
    @media (max-width: 768px) {
     display:grid;
+    width:100%;
     justify-content: center;
   }
 `;
@@ -328,7 +329,6 @@ const Login = styled.a`
    letter-spacing: 0.1px;
    border-radius: 4px;
    @media (max-width: 768px) {
-        width: 17%;
         padding:0.4em 0.2em 5px 12px;
         font-size:10px;
         position: absolute;

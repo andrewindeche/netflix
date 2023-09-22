@@ -34,7 +34,9 @@ line-height: 1em;
 z-index:1;
 @media only screen and (max-width: 768px){
 border-top:solid hsla(0, 0%, 0%,30%) 50px;
- }
+width:100%;
+
+}
 `;
 const Introduction = styled.div`
 display:flex;
