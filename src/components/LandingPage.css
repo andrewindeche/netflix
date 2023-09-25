@@ -2,17 +2,18 @@
     background-image:linear-gradient(to bottom,rgba(0,0,0,0)60%,rgba(0,0,0,2)),linear-gradient(to top,rgba(0,0,0,0)90%,rgba(0,0,0,4)), url(../bg.jpg);
     height:24em;
     }
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 960px){
         .LandingPage{
             display: grid;
             width: 100%;
             height: 400px;
+            font-weight: 100;
             justify-content: center;
             align-content: center;
-            padding:0em 3em 1em ;
+            padding:4em 3em 1em ;
         }
-        #first-line,#second-line{
-            font-size: 20px;
+        #first-line{
+            font-size: 32px;
             flex-flow: row wrap;
         }
         #third-line,#intro-paragraph,#fourth-line,#fifth-line{

@@ -181,7 +181,7 @@ const NavBar = styled.nav`
    margin:1em;
    letter-spacing: 16px;
    z-index: 0.5;
-   @media (max-width: 768px) {
+   @media (max-width: 960px) {
     display:flex;
     flex-direction: row;
     flex-wrap: no-wrap;
@@ -199,13 +199,18 @@ const Logo = styled.a`
    img {
        width: 93%;
    }
-   @media (max-width: 768px) {
+   @media only screen and (max-width: 960px) {
     img {
-        width: 28%;
+        width: 25%;
         position: absolute;
         margin: 14px;
         top:0;
         left:0;
+    }
+  }
+  @media only screen and (min-width: 960){
+    img { 
+        width: 93%;
     }
   }
 `;
@@ -333,14 +338,14 @@ const Login = styled.a`
    margin:0 9em 2em;
    letter-spacing: 0.1px;
    border-radius: 4px;
-   @media (max-width: 768px) {
+   @media (max-width: 960px) {
         padding:6px 16px;
         font-size:14px;
         white-space: nowrap;
         position: relative;
         top: 0;
-        right:2rem;
-        margin:10px;
+        right:1rem;
+        margin:8px;
     }
    transition: all 250ms ease-out;
    cursor: pointer;
@@ -348,9 +353,7 @@ const Login = styled.a`
        background-color : #8B0000;
        border-color: transparent;
    }
-  
 `;
-
 const UserImage = styled.img`
    border-radius: 100%;
    width: 100%;

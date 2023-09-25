@@ -10,7 +10,7 @@ const LandingPage = ()=> {
         <div className="LandingPage"> 
         <Container>
         <Introduction>
-        <h1 id="intro-text"><span id="first-line">Unlimited movies,TV</span><span id="second-line"> shows,and more</span></h1>
+        <h1 id="intro-text"><span id="first-line">Unlimited movies,TV shows,and more</span></h1>
         <p id="intro-paragraph">Watch anywhere.Cancel anytime.</p>
         <p><span id="third-line">Ready to watch?Enter your email</span><span id="fourth-line"> to create or restart your</span><span id="fifth-line"> membership.</span></p>
         </Introduction>
