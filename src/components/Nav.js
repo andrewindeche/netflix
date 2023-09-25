@@ -184,8 +184,8 @@ const NavBar = styled.nav`
    @media (max-width: 768px) {
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
     width:100%;
   }
 `;
@@ -201,9 +201,10 @@ const Logo = styled.a`
    }
    @media (max-width: 768px) {
     img {
-        width: 30%;
+        width: 33%;
         position: absolute;
-        margin: 13px;
+        margin: 12px;
+        top:0;
         left:0;
     }
   }
@@ -251,9 +252,9 @@ const DropSeries = styled.div`
 `;
 const NavMenu = styled.div`
    display: flex;
-   justify-content: flex-end;
+   justify-content: flex-start;
    align-items: center;
-   flex-flow: row nowrap;
+   flex-flow: row wrap;
    height: 100%;
    padding: 0px;
    position: relative;
@@ -337,8 +338,9 @@ const Login = styled.a`
         font-size:14px;
         white-space: nowrap;
         position: relative;
-        top: 8px;
-        right:0;
+        top: 0;
+        right:2.5rem;
+        margin:10px;
     }
    transition: all 250ms ease-out;
    cursor: pointer;
