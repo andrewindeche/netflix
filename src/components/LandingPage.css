@@ -13,10 +13,7 @@
         }
         #first-line,#second-line{
             font-size: 20px;
-        }
-        #first-line::after{
-            content: "\a";
-            white-space: pre;
+            flex-flow: row wrap;
         }
         #third-line,#intro-paragraph,#fourth-line,#fifth-line{
             font-size:small;

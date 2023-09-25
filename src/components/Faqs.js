@@ -108,7 +108,7 @@ button {
 background-color:#FF0000;
 color:white;
 font-weight:bold;
-padding: 6px 14px;
+padding: 10px 30px;
 margin:0 7em 2em;
 margin-left:0.5em;
 height:2.4em;
@@ -117,18 +117,40 @@ border:0;
 text-align: center !important;
 font-size:24px;
 position: absolute;
-  }
+@media only screen and (max-width: 768px){
+  font-size:12px;
+  font-weight: bold;
+  margin: 14px 40px;
+  width:10em;
+  height:3em;
+  border-radius: 2px;
+  padding: 8px 13px;
+  display:flex;
+  .icon{
+    width: 10%;
+    padding-left: 7px;
+    padding-top: 1.3px;
+      }
+    }
+}
+
 button:hover{
   background-color:#DC143C;
 }
 input{
 height:3.8em;
 width:25em;
-padding:1.2em;
+padding:1.2em 0.4em;
 color:white !important;
 border:1px solid grey;
 border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
-}`;
+@media only screen and (max-width: 768px){
+  width:16em;
+  height:2em;
+  font-size:12px;
+}
+}
+`;
 export default Faqs;

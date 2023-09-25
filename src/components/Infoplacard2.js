@@ -28,7 +28,8 @@ gap:3em;
 @media only screen and (max-width: 768px){
   display: flex;
   flex-flow: column;
-  margin:auto;
+  gap: 0;
+  text-align: center;
  }
 img[src*="/images/logo.png"] {
   width:150% ;
@@ -39,6 +40,9 @@ const Img = styled.div`
 padding:1em 2em;
 margin:1em 1em 1em 0.1em;
 float: right;
+@media only screen and (max-width: 768px){
+  width: 80%;
+ }
 `;
 const Textbox = styled.div`
 width: 100%;

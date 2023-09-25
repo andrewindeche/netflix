@@ -30,6 +30,7 @@ const Container = styled.div`
 text-align: center;
 padding:8em;
 font-size:22px;
+position: relative;
 line-height: 1em;
 z-index:1;
 @media only screen and (max-width: 768px){
