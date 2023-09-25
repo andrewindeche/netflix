@@ -333,11 +333,12 @@ const Login = styled.a`
    letter-spacing: 0.1px;
    border-radius: 4px;
    @media (max-width: 768px) {
-        padding:0.4em 0.2em 5px 12px;
-        font-size:10px;
-        position: absolute;
-        top: 0;
-        right:4;
+        padding:6px 16px;
+        font-size:14px;
+        white-space: nowrap;
+        position: relative;
+        top: 8px;
+        right:0;
     }
    transition: all 250ms ease-out;
    cursor: pointer;
