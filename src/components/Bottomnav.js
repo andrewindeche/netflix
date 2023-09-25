@@ -5,32 +5,39 @@ const Bottomnav = ()=> {
   return(
         <>
         <Container3>
-        <ul style={{paddingLeft:'2.1em'}}>Questions?Contact us.</ul>
+        <ul class = "Questions" style={{paddingLeft:'2.1em'}}>Questions?Contact us.</ul>
         <Firstlist>
-        <ul>FAQ</ul>
-        <ul>Investor Relations</ul>
-        <ul>Privacy</ul>
-        <ul>Speed Test</ul>
-        <ul>Netflix Kenya</ul>
+        <ul class="FAQ">FAQ
+          <li>Investor Relations</li>
+          <li>Privacy</li>
+          <li>Speed Test</li>
+          <li>Netflix Kenya</li>
+        </ul>
         </Firstlist>
         <Secondlist>
-        <ul>Help Center</ul>
-        <ul>Jobs</ul>
-        <ul>Cookie Preferences</ul>
-        <ul>Legal Notices</ul>
+        <ul class ="Help-Center">
+          <li>Help Center</li>
+          <li>Jobs</li>
+          <li>Cookie Preferences</li>
+          <li>Legal Notices</li>
+        </ul>
         <ul className="Hidden">Blank</ul>
         </Secondlist>
         <Thirdlist>
-        <ul>Account</ul>
-        <ul>Ways to Watch</ul>
-        <ul>Corporate Information</ul>
-        <ul>Speed Test</ul>
-        <ul>Only on Netflix</ul>
+        <ul class = "Account">
+          <li>Account</li>
+          <li>Ways to Watch</li>
+          <li>Corporate Information</li>
+          <li>Speed Test</li>
+          <li>Only on Netflix</li>
+        </ul>
         </Thirdlist>
         <Forthlist>
-        <ul>Media Center</ul>
-        <ul>Terms of Use</ul>
-        <ul>Contact Us</ul>
+        <ul class ="Media-Center">
+          <li>Media Center</li>
+          <li>Terms of Use</li>
+          <li>Contact Us</li>
+        </ul>
         <ul className="Hidden">Blank</ul>
         <ul className="Hidden">Blank</ul>
         </Forthlist>
@@ -55,6 +62,7 @@ position: relative;
 display: inline-block;
 padding-right:6em;
 text-decoration:underline;
+}
 `;
 const Forthlist = styled.div`
 position: relative;
@@ -66,8 +74,24 @@ color:grey;
 text-decoration:underline;
 font-size:14px;
 line-height:1.6em;
-padding:6em 8em;
+display: flex;
+flex-flow: row no-wrap;
+padding:2em 2em;
 color:#D3D3D3;
+.Questions{
+  position: absolute;
+  margin: 6px 2em;
+}
+.FAQ ,.Help-Center,.Account,.Media-Center,.contacts{
+  padding: 4em;
+  list-style: none; 
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media only screen and (max-width: 768px){
+  font-size: 16px;
+}
 p{
 padding-left:3em;
 font-weight:regular;
