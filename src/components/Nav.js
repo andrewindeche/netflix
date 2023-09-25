@@ -198,8 +198,9 @@ const Logo = styled.a`
    }
    @media (max-width: 768px) {
     img {
-        width: 40%;
-        margin:0.5em -7.5em;
+        width: 25%;
+        position: absolute;
+        margin: 10px;
         left:0;
     }
   }
