@@ -174,6 +174,7 @@ const NavBar = styled.nav`
    right: 0;
    background-color: transparent;
    display: flex;
+   flex-direction: row;
    justify-content: space-between;
    align-items: center;
    padding: 0 45px;
@@ -181,9 +182,11 @@ const NavBar = styled.nav`
    letter-spacing: 16px;
    z-index: 0.5;
    @media (max-width: 768px) {
-    display:grid;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width:100%;
-    justify-content: center;
   }
 `;
 
@@ -198,9 +201,9 @@ const Logo = styled.a`
    }
    @media (max-width: 768px) {
     img {
-        width: 25%;
+        width: 30%;
         position: absolute;
-        margin: 10px;
+        margin: 13px;
         left:0;
     }
   }
@@ -333,8 +336,8 @@ const Login = styled.a`
         padding:0.4em 0.2em 5px 12px;
         font-size:10px;
         position: absolute;
+        top: 0;
         right:4;
-        margin: 2px 17em auto;
     }
    transition: all 250ms ease-out;
    cursor: pointer;
