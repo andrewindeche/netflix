@@ -206,11 +206,7 @@ const Logo = styled.a`
         margin: 14px;
         top:0;
         left:0;
-    }
-  }
-  @media only screen and (min-width: 960){
-    img { 
-        width: 93%;
+        z-index:5
     }
   }
 `;
@@ -338,6 +334,7 @@ const Login = styled.a`
    margin:0 9em 2em;
    letter-spacing: 0.1px;
    border-radius: 4px;
+   z-index:5;
    @media (max-width: 960px) {
         padding:6px 16px;
         font-size:14px;
