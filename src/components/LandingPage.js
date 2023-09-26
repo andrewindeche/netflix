@@ -28,7 +28,7 @@ const LandingPage = ()=> {
     }
 const Container = styled.div`
 text-align: center;
-padding:8em;
+padding:3em 0;
 font-size:22px;
 position: relative;
 line-height: 1em;
@@ -97,9 +97,9 @@ border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
 @media only screen and (max-width: 768px){
-  width:16em;
-  height:2em;
-  font-size:12px;
+  width:18em;
+  height:3em;
+  font-size:16px;
 }
 }
 `;

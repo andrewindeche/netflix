@@ -6,11 +6,11 @@
         .LandingPage{
             display: grid;
             width: 100%;
-            height: 400px;
+            height: auto;
             font-weight: 90;
             justify-content: center;
             align-content: center;
-            padding:10em 3em 1em ;
+            padding:1px 3em 1em ;
         }
         #first-line{
             font-size: 32px;
