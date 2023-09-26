@@ -76,7 +76,7 @@ font-size:14px;
 line-height:1.6em;
 display: flex;
 flex-flow: row no-wrap;
-padding:2em 2em;
+padding:2em 4em;
 color:#D3D3D3;
 .Questions{
   position: absolute;
@@ -87,7 +87,7 @@ color:#D3D3D3;
   list-style: none; 
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 8px 0px;
 }
 @media only screen and (max-width: 768px){
   font-size: 16px;

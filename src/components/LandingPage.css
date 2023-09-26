@@ -10,16 +10,17 @@
             font-weight: 90;
             justify-content: center;
             align-content: center;
-            padding:4em 3em 1em ;
+            padding:10em 3em 1em ;
         }
         #first-line{
             font-size: 32px;
             flex-flow: row wrap;
+            line-height: 1.5em;
         }
         #third-line,#intro-paragraph,#fourth-line,#fifth-line{
             font-size: 18px;
             font-weight: 100;
-            line-height: 1em;
+            
         }
         #third-line::after{
             content: "\a";
@@ -30,7 +31,7 @@
             white-space: pre;
         }
         #third-line{
-            padding-top:-1px;
+            line-height: 2em;
         }
      }
 
