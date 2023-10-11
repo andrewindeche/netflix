@@ -23,6 +23,9 @@
     max-width: 35%;
     height: 80px;
   }
+  .buttons{
+    margin: 2em;
+  }
   .button_play {
    font-size:1.3rem;
    padding:15px;
