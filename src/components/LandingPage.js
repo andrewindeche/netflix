@@ -28,7 +28,7 @@ const LandingPage = ()=> {
     }
 const Container = styled.div`
 text-align: center;
-padding:4em 0;
+padding: 3em 0;
 font-size:30px;
 position: relative;
 line-height: 1em;
