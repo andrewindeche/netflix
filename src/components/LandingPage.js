@@ -36,7 +36,15 @@ z-index:1;
 @media only screen and (max-width: 768px){
 border-top:solid hsla(0, 0%, 0%,30%) 50px;
 width:100%;
-
+}
+@media only screen and (max-width: 475px) {
+  width: 80%;
+  line-height: 0.5em;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 375px) {
+  width: 70%;
+  font-size: 14px;
 }
 `;
 const Introduction = styled.div`
@@ -82,6 +90,11 @@ position: absolute;
     padding-top: 1.3px;
       }
     }
+@media only screen and (max-width: 475px) {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 20px;
+}
 }
 
 button:hover{
