@@ -10,7 +10,7 @@ const LandingPage = ()=> {
         <div className="LandingPage"> 
         <Container>
         <Introduction>
-        <h1 id="intro-text"><span id="first-line">Unlimited movies,TV</span><span id="second-line"> shows,and more</span></h1>
+        <h1 id="intro-text"><span id="first-line">Unlimited movies,TV shows,and more</span></h1>
         <p id="intro-paragraph">Watch anywhere.Cancel anytime.</p>
         <p><span id="third-line">Ready to watch?Enter your email</span><span id="fourth-line"> to create or restart your</span><span id="fifth-line"> membership.</span></p>
         </Introduction>
@@ -28,11 +28,16 @@ const LandingPage = ()=> {
     }
 const Container = styled.div`
 text-align: center;
-padding:8em;
-font-size:22px;
+padding: 3em 0;
+font-size:30px;
+position: relative;
 line-height: 1em;
 z-index:1;
+@media only screen and (max-width: 768px){
+border-top:solid hsla(0, 0%, 0%,30%) 50px;
+width:100%;
 
+}
 `;
 const Introduction = styled.div`
 display:flex;
@@ -63,21 +68,22 @@ text-align: center !important;
 font-size:24px;
 position: absolute;
 @media only screen and (max-width: 768px){
-  display:block;
   font-size:12px;
   font-weight: bold;
-  margin: 14px 30px;
-  width:9em;
+  margin: 14px 40px;
+  width:10em;
   height:3em;
-  padding: 5px 2px;
-  display:grid;
+  border-radius: 2px;
+  padding: 8px 13px;
+  display:flex;
   .icon{
-    width: 30%;
-    grid-area: 1/2;
-    padding: 1px 0px 6px;
+    width: 10%;
+    padding-left: 7px;
+    padding-top: 1.3px;
       }
     }
 }
+
 button:hover{
   background-color:#DC143C;
 }
@@ -91,9 +97,9 @@ border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
 @media only screen and (max-width: 768px){
-  width:16em;
-  height:2em;
-  font-size:12px;
+  width:18em;
+  height:3em;
+  font-size:16px;
 }
 }
 `;

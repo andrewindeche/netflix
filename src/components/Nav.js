@@ -174,15 +174,19 @@ const NavBar = styled.nav`
    right: 0;
    background-color: transparent;
    display: flex;
+   flex-direction: row;
    justify-content: space-between;
    align-items: center;
    padding: 0 45px;
    margin:1em;
    letter-spacing: 16px;
    z-index: 0.5;
-   @media (max-width: 768px) {
-    display:grid;
-    justify-content: center;
+   @media (max-width: 960px) {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    width:100%;
   }
 `;
 
@@ -195,11 +199,14 @@ const Logo = styled.a`
    img {
        width: 93%;
    }
-   @media (max-width: 768px) {
+   @media only screen and (max-width: 960px) {
     img {
-        width: 40%;
-        margin:0.5em -7.5em;
+        width: 25%;
+        position: absolute;
+        margin: 14px;
+        top:0;
         left:0;
+        z-index:5
     }
   }
 `;
@@ -246,9 +253,9 @@ const DropSeries = styled.div`
 `;
 const NavMenu = styled.div`
    display: flex;
-   justify-content: flex-end;
+   justify-content: flex-start;
    align-items: center;
-   flex-flow: row nowrap;
+   flex-flow: row wrap;
    height: 100%;
    padding: 0px;
    position: relative;
@@ -327,13 +334,15 @@ const Login = styled.a`
    margin:0 9em 2em;
    letter-spacing: 0.1px;
    border-radius: 4px;
-   @media (max-width: 768px) {
-        width: 17%;
-        padding:0.4em 0.2em 5px 12px;
-        font-size:10px;
-        position: absolute;
-        right:4;
-        margin: 2px 17em auto;
+   z-index:5;
+   @media (max-width: 960px) {
+        padding:6px 16px;
+        font-size:14px;
+        white-space: nowrap;
+        position: relative;
+        top: 0;
+        right:1rem;
+        margin:8px;
     }
    transition: all 250ms ease-out;
    cursor: pointer;
@@ -341,9 +350,7 @@ const Login = styled.a`
        background-color : #8B0000;
        border-color: transparent;
    }
-  
 `;
-
 const UserImage = styled.img`
    border-radius: 100%;
    width: 100%;
