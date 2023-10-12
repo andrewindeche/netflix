@@ -94,7 +94,7 @@ position: absolute;
   width: 50%;
   margin: 0 auto;
   font-size: 20px;
-}
+  }
 }
 
 button:hover{
@@ -113,6 +113,10 @@ font-size:15px;
   width:18em;
   height:3em;
   font-size:16px;
+}
+@media only screen and (max-width: 425px){
+  width:14em;
+  margin-right:8em;
 }
 }
 `;
