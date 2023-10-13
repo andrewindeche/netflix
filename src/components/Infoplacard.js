@@ -23,13 +23,12 @@ const Container = styled.div`
   border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
 @media only screen and (max-width: 768px){
   position: absolute:
-  line-height: 2;
-  padding: 4em 2em 6em;
+  line-height: 4;
+  padding: 2em 1em 6em;
   margin:6px;
   gap:10px;
   #first-line,#second-line{
-    font-size: 13px;
-    line-height: 12px;
+    font-size: 16px;
   }
 }
 `;

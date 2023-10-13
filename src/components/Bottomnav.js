@@ -84,19 +84,24 @@ color:#D3D3D3;
   text-decoration: underline;
 }
 .FAQ ,.Help-Center,.Account,.Media-Center,.contacts{
-  padding: 2.5em;
+  padding: 1.4em;
+  margin:3em 2px;
   list-style: none; 
   display: flex;
   flex-direction: column;
-  gap: 4px 0px;
+  gap: 2px 0px;
 }
 @media only screen and (max-width: 768px){
-  padding: 0px 10px 8em 0em;
+  padding: 10px 10px 8em 0em;
   line-height:2em;
   margin:0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
+.Questions{
+  position: absolute;
+  left:1em;
+  margin:0; 
+}
 }
 p{
 padding-left:3em;
