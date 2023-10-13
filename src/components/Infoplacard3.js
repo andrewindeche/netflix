@@ -33,6 +33,12 @@ img[src*="/images/en.png"] {
   position: relative;
   flex-direction:column;
 }
+@media only screen and (max-width: 768px){
+  img[src*="/images/en.png"] {
+    width: 90%;
+    padding:1em;
+  }
+}
 `;
 const H2 = styled.div`
 line-height: 0.2em;

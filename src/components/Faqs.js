@@ -118,10 +118,9 @@ text-align: center !important;
 font-size:24px;
 position: absolute;
 @media only screen and (max-width: 768px){
-  font-size:12px;
   font-weight: bold;
   margin: 14px 40px;
-  width:10em;
+  width:8em;
   height:3em;
   border-radius: 2px;
   padding: 8px 13px;
@@ -133,7 +132,6 @@ position: absolute;
       }
     }
 }
-
 button:hover{
   background-color:#DC143C;
 }
@@ -146,11 +144,6 @@ border:1px solid grey;
 border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
-@media only screen and (max-width: 768px){
-  width:16em;
-  height:2em;
-  font-size:12px;
-}
 }
 `;
 export default Faqs;

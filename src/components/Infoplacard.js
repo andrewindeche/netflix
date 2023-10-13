@@ -22,19 +22,15 @@ const Container = styled.div`
   border-top:solid hsla(0, 0%, 50%,30%) 8px;
   border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
 @media only screen and (max-width: 768px){
-  margin: 1rem -11rem;
+  position: absolute:
   line-height: 2;
-  width:fit-content;
+  padding: 4em 2em 6em;
+  margin:6px;
   gap:10px;
   #first-line,#second-line{
     font-size: 13px;
     line-height: 12px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: start;
   }
-  
 }
 `;
 export default Infoplacard;
