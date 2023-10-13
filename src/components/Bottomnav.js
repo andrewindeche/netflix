@@ -5,9 +5,9 @@ const Bottomnav = ()=> {
   return(
         <>
         <Container3>
-        <ul class = "Questions" style={{paddingLeft:'2.1em'}}>Questions?Contact us.</ul>
+        <ul className = "Questions" style={{paddingLeft:'2.1em'}}>Questions?Contact us.</ul>
         <Firstlist>
-        <ul class="FAQ">FAQ
+        <ul className="FAQ">FAQ
           <li>Investor Relations</li>
           <li>Privacy</li>
           <li>Speed Test</li>
@@ -15,7 +15,7 @@ const Bottomnav = ()=> {
         </ul>
         </Firstlist>
         <Secondlist>
-        <ul class ="Help-Center">
+        <ul className ="Help-Center">
           <li>Help Center</li>
           <li>Jobs</li>
           <li>Cookie Preferences</li>
@@ -24,7 +24,7 @@ const Bottomnav = ()=> {
         <ul className="Hidden">Blank</ul>
         </Secondlist>
         <Thirdlist>
-        <ul class = "Account">
+        <ul className = "Account">
           <li>Account</li>
           <li>Ways to Watch</li>
           <li>Corporate Information</li>
@@ -33,7 +33,7 @@ const Bottomnav = ()=> {
         </ul>
         </Thirdlist>
         <Forthlist>
-        <ul class ="Media-Center">
+        <ul className ="Media-Center">
           <li>Media Center</li>
           <li>Terms of Use</li>
           <li>Contact Us</li>
@@ -72,7 +72,7 @@ text-decoration:underline;
 const Container3 = styled.div`
 color:grey;
 text-decoration:underline;
-font-size:14px;
+font-size:16px;
 line-height:1.6em;
 display: flex;
 flex-flow: row no-wrap;
@@ -81,16 +81,17 @@ color:#D3D3D3;
 .Questions{
   position: absolute;
   margin: 6px 2em;
+  text-decoration: underline;
 }
 .FAQ ,.Help-Center,.Account,.Media-Center,.contacts{
   padding: 4em;
   list-style: none; 
   display: flex;
   flex-direction: column;
-  gap: 8px 0px;
+  gap: 4px 0px;
 }
 @media only screen and (max-width: 768px){
-  font-size: 16px;
+    flex-flow: row wrap;
 }
 p{
 padding-left:3em;

@@ -41,9 +41,12 @@ width:100%;
   width: 80%;
   line-height: 0.5em;
   margin: 0 auto;
+  padding: 2em;
 }
 @media only screen and (max-width: 375px) {
-  width: 70%;
+  width: 50%;
+  margin: 0 auto;
+  line-height: 1em;
   font-size: 14px;
 }
 `;
@@ -84,6 +87,8 @@ position: absolute;
   border-radius: 2px;
   padding: 8px 13px;
   display:flex;
+  flex-direction: column;
+  gap: 6px;
   .icon{
     width: 10%;
     padding-left: 7px;
@@ -91,9 +96,10 @@ position: absolute;
       }
     }
 @media only screen and (max-width: 475px) {
-  width: 50%;
-  margin: 0 auto;
-  font-size: 20px;
+  width: 40%;
+  padding:5px auto;
+  margin: 1em 1em;
+  font-size: 14px;
   }
 }
 
@@ -110,12 +116,12 @@ border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
 @media only screen and (max-width: 768px){
-  width:18em;
+  width:10em;
   height:3em;
   font-size:16px;
 }
 @media only screen and (max-width: 425px){
-  width:14em;
+  width:20em;
   margin-right:8em;
 }
 }
