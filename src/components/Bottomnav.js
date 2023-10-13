@@ -5,7 +5,7 @@ const Bottomnav = ()=> {
   return(
         <>
         <Container3>
-        <ul className = "Questions" style={{paddingLeft:'2.1em'}}>Questions?Contact us.</ul>
+        <ul className = "Questions" style={{paddingLeft:'0.2em'}}>Questions?Contact us.</ul>
         <Firstlist>
         <ul className="FAQ">FAQ
           <li>Investor Relations</li>
@@ -73,7 +73,7 @@ const Container3 = styled.div`
 color:grey;
 text-decoration:underline;
 font-size:16px;
-line-height:1.6em;
+line-height:2em;
 display: flex;
 flex-flow: row no-wrap;
 padding:2em 4em;
@@ -84,14 +84,19 @@ color:#D3D3D3;
   text-decoration: underline;
 }
 .FAQ ,.Help-Center,.Account,.Media-Center,.contacts{
-  padding: 4em;
+  padding: 3em;
   list-style: none; 
   display: flex;
   flex-direction: column;
   gap: 4px 0px;
 }
 @media only screen and (max-width: 768px){
-    flex-flow: row wrap;
+  padding: 0px 10px 8em 0em;
+  line-height:2em;
+  margin:0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
 }
 p{
 padding-left:3em;
