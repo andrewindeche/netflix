@@ -84,7 +84,7 @@ color:#D3D3D3;
   text-decoration: underline;
 }
 .FAQ ,.Help-Center,.Account,.Media-Center,.contacts{
-  padding: 3em;
+  padding: 2.5em;
   list-style: none; 
   display: flex;
   flex-direction: column;
