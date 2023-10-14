@@ -37,18 +37,6 @@ z-index:1;
 border-top:solid hsla(0, 0%, 0%,30%) 50px;
 width:100%;
 }
-@media only screen and (max-width: 475px) {
-  width: 80%;
-  line-height: 0.5em;
-  margin: 0 auto;
-  padding: 2em;
-}
-@media only screen and (max-width: 375px) {
-  width: 50%;
-  margin: 0 auto;
-  line-height: 1em;
-  font-size: 14px;
-}
 `;
 const Introduction = styled.div`
 display:flex;
@@ -95,12 +83,6 @@ position: absolute;
     padding-top: 1.3px;
       }
     }
-@media only screen and (max-width: 475px) {
-  width: 40%;
-  padding:5px auto;
-  margin: 1em 1em;
-  font-size: 14px;
-  }
 }
 
 button:hover{
@@ -119,10 +101,6 @@ font-size:15px;
   width:10em;
   height:3em;
   font-size:16px;
-}
-@media only screen and (max-width: 425px){
-  width:20em;
-  margin-right:8em;
 }
 }
 `;
