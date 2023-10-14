@@ -104,9 +104,9 @@ border-bottom:solid #3A3B3C 6px;
   padding:0 1em 5em 10px;
   font-size: 20px;
   #intro-paragraph {
-    text-align: justify;
+    text-align: center;
     font-size:18px;
-    padding: 0 2em 4em 1em;
+    padding: 0 1em 4em 1em;
   }
   #intro-text{
     font-size: 30px;
@@ -135,7 +135,7 @@ position: absolute;
   left: 1em;
   font-weight: bold;
   font-size: 18px;
-  margin: 0 3em 10em;
+  margin: -1em 3em 10em;
   width:9.5em;
   height:3em;
   border-radius: 5px;
@@ -163,10 +163,10 @@ font-size:15px;
 }
 @media only screen and (max-width: 768px){
   input{
-    width: 80%;
+    width: 70%;
     height:10%;
     position: absolute;
-    margin: -6em 30px;
+    margin: -6em 40px;
     left: 0;
   }
 }
