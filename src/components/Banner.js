@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import requests from "./requests";
 import "./Banner.css";
-import { faInfoCircle, faPlay} from "@fortawesome/free-solid-svg-icons";
+import { faPlay} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Banner() {
@@ -35,16 +35,13 @@ function Banner() {
     }}
   >
     <div className="content">
-      {/* title */}
       <h1 className="title">
         {" "}
         {movie?.title || movie?.original_name || movie?.name}
       </h1>
-      {/* description */}
 
       <h2 className="description">{truncate(movie?.overview, 200)}</h2>
 
-      {/* div with 2 buttons play and more info */}
       <div className="buttons">
      <span><button className="button_play"><FontAwesomeIcon
       className = "icon" icon= {faPlay}/>Play</button></span>
