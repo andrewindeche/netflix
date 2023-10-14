@@ -46,7 +46,7 @@ gap: 8px;
 margin: 6em 1.5em 0;
 font-weight: bolder;
 @media only screen and (max-width: 768px){
-  margin:11px
+  margin:11px;
 }
 `;
 
