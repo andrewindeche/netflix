@@ -261,6 +261,10 @@ const NavMenu = styled.div`
    margin-right: auto;
    margin-left : 25px;
    cursor:pointer;
+   @media only screen and (max-width: 960px) {
+    position: absolute;
+    left:10;
+   }
    a{
        display: flex;
        align-items: center;
@@ -295,6 +299,10 @@ const NavMenu = styled.div`
                transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94)0s;
                visibility: hidden;
                width: auto;
+           }
+           @media only screen and (max-width: 960px){
+            font-size:8px;
+            font-weight: bolder;
            }
        }
        &:hover {
