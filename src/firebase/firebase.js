@@ -9,8 +9,8 @@ const firebaseConfig = {
   projectId: "netflixclone-ad7b1",
   storageBucket: "netflixclone-ad7b1.appspot.com",
   messagingSenderId: "868889073073",
-  appId: "1:868889073073:web:bf61685f2d9a2db1291990",
-  measurementId: "G-2SW5NXYRJE"
+  appId: "1:868889073073:web:52c40e8d285410c0291990",
+  measurementId: "G-MTM4LQR8KT"
 };
 
 // Initialize Firebase
@@ -19,6 +19,7 @@ const db = firebaseApp.firestore();
 const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
 const storage = getStorage(firebaseApp);
+const analytics = getAnalytics(app);
 
 export {auth, provider,storage};
 export default db;
