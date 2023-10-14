@@ -23,9 +23,9 @@ const Container = styled.div`
   border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
 @media only screen and (max-width: 768px){
   position: absolute:
-  line-height: 4;
-  padding: 2em 1em 6em;
-  margin:6px;
+  line-height: 2;
+  padding: 2em 1em 4em;
+  margin:1;
   gap:10px;
   #first-line,#second-line{
     font-size: 16px;
