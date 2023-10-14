@@ -14,7 +14,6 @@
         }
         #first-line{
             font-size: 32px;
-            flex-flow: row wrap;
             line-height: 1.5em;
         }
         #third-line,#intro-paragraph,#fourth-line,#fifth-line{
