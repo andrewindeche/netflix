@@ -101,12 +101,12 @@ border-bottom:solid #3A3B3C 6px;
   font-size:21px;
 }
 @media only screen and (max-width: 768px){
-  padding:0 1em 0 1px;
+  padding:0 1em 5em 10px;
   font-size: 20px;
   #intro-paragraph {
     text-align: justify;
     font-size:18px;
-    padding: 1.5em;
+    padding: 0 2em 4em 1em;
   }
   #intro-text{
     font-size: 30px;
@@ -132,10 +132,10 @@ font-size:24px;
 position: absolute;
 @media only screen and (max-width: 768px){
   position: absolute;
-  left: 2em;
+  left: 1em;
   font-weight: bold;
   font-size: 18px;
-  margin: 0 18px 6em;
+  margin: 0 10px 10em;
   width:9.5em;
   height:3em;
   border-radius: 5px;
@@ -166,6 +166,7 @@ font-size:15px;
     width: 80%;
     height:10%;
     position: absolute;
+    margin: -6em 30px;
     left: 0;
   }
 }
