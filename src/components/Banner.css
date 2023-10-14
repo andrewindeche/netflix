@@ -23,8 +23,20 @@
     max-width: 35%;
     height: 80px;
   }
+  @media only screen and (max-width: 960px){
+    .description {
+      font-size:10px;
+      width:100%;
+      font-weight: bolder;
+      color: white;
+      line-height: 16px;
+    }
+    .title {
+      font-size: 25px;
+    }
+  }
   .buttons{
-    margin: 2em;
+    margin: 5em 1em;
   }
   .button_play {
    font-size:1.3rem;
