@@ -92,7 +92,7 @@ color:#D3D3D3;
   gap: 2px 0px;
 }
 @media only screen and (max-width: 768px){
-  padding: 10px 10px 8em 0em;
+  padding: 2em 4px 8em 0em;
   line-height:2em;
   margin:0px;
   display: grid;

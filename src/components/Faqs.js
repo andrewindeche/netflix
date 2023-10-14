@@ -65,7 +65,7 @@ const Faqs = ()=> {
         <form action="/action_page.php">
           <input type="text" placeholder="Email address" name="search"></input>
           <button type="submit">Get Started<FontAwesomeIcon 
-          className = "icon" icon= {faChevronRight}/>  </button>
+          className = "icon" icon= {faChevronRight}/> </button>
         </form>
       </Search>
         </Container>
@@ -89,6 +89,7 @@ border-bottom:solid #3A3B3C 6px;
   color: white; 
   margin: 10px auto;
   height: 5.5em;
+  font-size:12px;
   border-radius: 0 !important;
 }
 .accordion-item {
@@ -99,6 +100,15 @@ border-bottom:solid #3A3B3C 6px;
   font-weight:50;
   font-size:21px;
 }
+@media only screen and (max-width: 768px){
+  padding:0 2px 0 8px;
+  #intro-paragraph {
+    text-align: justify;
+  }
+  #intro-text{
+    font-size: 30px;
+    margin: 1em 1em 0em;
+  }
 `;
 const Search = styled.div`
 display:flex;
@@ -118,17 +128,20 @@ text-align: center !important;
 font-size:24px;
 position: absolute;
 @media only screen and (max-width: 768px){
+  position: absolute;
+  left: 2em;
   font-weight: bold;
-  margin: 14px 40px;
+  margin: 0 18px 6em;
   width:8em;
-  height:3em;
-  border-radius: 2px;
-  padding: 8px 13px;
+  height:2em;
+  border-radius: 5px;
+  padding: 6px 9px 8px 16px;
   display:flex;
+  border:14;
   .icon{
     width: 10%;
     padding-left: 7px;
-    padding-top: 1.3px;
+    padding-top: 9px;
       }
     }
 }
