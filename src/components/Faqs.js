@@ -107,7 +107,7 @@ border-bottom:solid #3A3B3C 6px;
   }
   #intro-text{
     font-size: 30px;
-    margin: 1em 1em 0em;
+    margin: 1em 0em 0em;
   }
 `;
 const Search = styled.div`

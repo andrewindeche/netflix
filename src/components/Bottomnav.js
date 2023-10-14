@@ -96,7 +96,7 @@ color:#D3D3D3;
   line-height:2em;
   margin:0px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 .Questions{
   position: absolute;
   left:1em;
