@@ -31,6 +31,9 @@
       color: white;
       line-height: 16px;
     }
+    .title {
+      font-size: 25px;
+    }
   }
   .buttons{
     margin: 5em 1em;
