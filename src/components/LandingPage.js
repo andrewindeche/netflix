@@ -74,20 +74,20 @@ text-align: center !important;
 font-size:24px;
 position: absolute;
 @media only screen and (max-width: 768px){
-  font-size:12px;
+  font-size:18px;
   font-weight: bold;
   margin: 14px 40px;
-  width:10em;
-  height:3em;
-  border-radius: 2px;
+  width:9em;
+  height:2.8em;
+  border-radius: 4px;
   padding: 8px 13px;
   display:flex;
   flex-direction: column;
   gap: 6px;
   .icon{
     width: 10%;
-    padding-left: 7px;
-    padding-top: 1.3px;
+    padding: 0 0 5em 5em;
+    margin: -1.6em 1em;
       }
     }
 }
