@@ -134,17 +134,17 @@ position: absolute;
   position: absolute;
   left: 2em;
   font-weight: bold;
+  font-size: 18px;
   margin: 0 18px 6em;
-  width:8em;
-  height:2em;
+  width:9.5em;
+  height:3em;
   border-radius: 5px;
-  padding: 6px 9px 8px 16px;
+  padding: 14px 9px 8px 25px;
   display:flex;
   border:14;
   .icon{
-    width: 10%;
-    padding-left: 7px;
-    padding-top: 9px;
+    width: 8%;
+    padding: 5px 7px;
       }
     }
 }
@@ -160,6 +160,14 @@ border:1px solid grey;
 border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
+}
+@media only screen and (max-width: 768px){
+  input{
+    width: 80%;
+    height:10%;
+    position: absolute;
+    left: 0;
+  }
 }
 `;
 export default Faqs;

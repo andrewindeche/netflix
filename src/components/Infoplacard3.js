@@ -34,7 +34,9 @@ img[src*="/images/en.png"] {
   flex-direction:column;
 }
 @media only screen and (max-width: 768px){
+  font-size: 18px;
   img[src*="/images/en.png"] {
+    position: relative;
     width: 90%;
     padding:1em;
   }
