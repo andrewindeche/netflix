@@ -135,7 +135,7 @@ position: absolute;
   left: 1em;
   font-weight: bold;
   font-size: 18px;
-  margin: 0 10px 10em;
+  margin: 0 3em 10em;
   width:9.5em;
   height:3em;
   border-radius: 5px;
