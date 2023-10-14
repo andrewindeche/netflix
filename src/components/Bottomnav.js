@@ -94,6 +94,7 @@ color:#D3D3D3;
 @media only screen and (max-width: 768px){
   padding: 2em 4px 8em 0em;
   line-height:2em;
+  font-size: 14px;
   margin:0px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

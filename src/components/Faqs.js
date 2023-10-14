@@ -101,9 +101,12 @@ border-bottom:solid #3A3B3C 6px;
   font-size:21px;
 }
 @media only screen and (max-width: 768px){
-  padding:0 2px 0 8px;
+  padding:0 1em 0 1px;
+  font-size: 20px;
   #intro-paragraph {
     text-align: justify;
+    font-size:18px;
+    padding: 1.5em;
   }
   #intro-text{
     font-size: 30px;
