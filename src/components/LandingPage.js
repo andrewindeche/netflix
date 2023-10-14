@@ -49,7 +49,11 @@ font-weight: bolder;
   font-weight: bolder;
 }
 @media only screen and (max-width: 768px){
-  margin:11px;
+  margin:6px;
+  #introductory-text{
+   padding:0 10em;
+   align-text: center;
+  }
 }
 `;
 const Search = styled.div`
