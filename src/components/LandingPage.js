@@ -36,6 +36,7 @@ z-index:1;
 @media only screen and (max-width: 768px){
 border-top:solid hsla(0, 0%, 0%,30%) 50px;
 width:100%;
+word-wrap: break-word;
 }
 `;
 const Introduction = styled.div`
@@ -98,7 +99,7 @@ border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
 @media only screen and (max-width: 768px){
-  width:10em;
+  width:14em;
   height:3em;
   font-size:16px;
 }
