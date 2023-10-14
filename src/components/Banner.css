@@ -23,6 +23,15 @@
     max-width: 35%;
     height: 80px;
   }
+  @media only screen and (max-width: 960px){
+    .description {
+      font-size:10px;
+      width:100%;
+      font-weight: bolder;
+      color: white;
+      line-height: 16px;
+    }
+  }
   .buttons{
     margin: 4em 1em;
   }

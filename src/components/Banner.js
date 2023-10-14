@@ -48,9 +48,6 @@ function Banner() {
       <div className="buttons">
      <span><button className="button_play"><FontAwesomeIcon
       className = "icon" icon= {faPlay}/>Play</button></span>
-
-      <span><button className="button_list"><FontAwesomeIcon
-       className = "icon" icon= {faInfoCircle}/>More Info</button></span>
       </div>
     </div>
     <div className="fade"/>
