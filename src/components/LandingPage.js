@@ -10,7 +10,7 @@ const LandingPage = ()=> {
         <div className="LandingPage"> 
         <Container>
         <Introduction>
-        <h1 id="intro-text"><span id="first-line">Unlimited movies,TV shows,and more</span></h1>
+        <h1 id="introductory-text"><span id="first-line">Unlimited movies,TV shows,and more</span></h1>
         <p id="intro-paragraph">Watch anywhere.Cancel anytime.</p>
         <p><span id="third-line">Ready to watch?Enter your email</span><span id="fourth-line"> to create or restart your</span><span id="fifth-line"> membership.</span></p>
         </Introduction>
@@ -36,7 +36,7 @@ z-index:1;
 @media only screen and (max-width: 768px){
 border-top:solid hsla(0, 0%, 0%,30%) 50px;
 width:100%;
-
+word-wrap: break-word;
 }
 `;
 const Introduction = styled.div`
@@ -45,11 +45,17 @@ flex-direction: column;
 gap: 8px;
 margin: 6em 1.5em 0;
 font-weight: bolder;
+#introductory-text{
+  font-weight: bolder;
+}
 @media only screen and (max-width: 768px){
-  margin:11px
+  margin:6px;
+  #introductory-text{
+   padding:0 10em;
+   align-text: center;
+  }
 }
 `;
-
 const Search = styled.div`
 display:flex;
 align-items:center;
@@ -68,18 +74,20 @@ text-align: center !important;
 font-size:24px;
 position: absolute;
 @media only screen and (max-width: 768px){
-  font-size:12px;
+  font-size:18px;
   font-weight: bold;
   margin: 14px 40px;
-  width:10em;
-  height:3em;
-  border-radius: 2px;
+  width:9em;
+  height:2.8em;
+  border-radius: 4px;
   padding: 8px 13px;
   display:flex;
+  flex-direction: column;
+  gap: 6px;
   .icon{
     width: 10%;
-    padding-left: 7px;
-    padding-top: 1.3px;
+    padding: 0 0 5em 5em;
+    margin: -1.6em 1em;
       }
     }
 }
@@ -97,7 +105,7 @@ border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
 @media only screen and (max-width: 768px){
-  width:18em;
+  width:14em;
   height:3em;
   font-size:16px;
 }

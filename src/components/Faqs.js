@@ -65,7 +65,7 @@ const Faqs = ()=> {
         <form action="/action_page.php">
           <input type="text" placeholder="Email address" name="search"></input>
           <button type="submit">Get Started<FontAwesomeIcon 
-          className = "icon" icon= {faChevronRight}/>  </button>
+          className = "icon" icon= {faChevronRight}/> </button>
         </form>
       </Search>
         </Container>
@@ -89,6 +89,7 @@ border-bottom:solid #3A3B3C 6px;
   color: white; 
   margin: 10px auto;
   height: 5.5em;
+  font-size:12px;
   border-radius: 0 !important;
 }
 .accordion-item {
@@ -99,6 +100,18 @@ border-bottom:solid #3A3B3C 6px;
   font-weight:50;
   font-size:21px;
 }
+@media only screen and (max-width: 768px){
+  padding:0 1em 5em 10px;
+  font-size: 20px;
+  #intro-paragraph {
+    text-align: center;
+    font-size:18px;
+    padding: 0 1em 4em 1em;
+  }
+  #intro-text{
+    font-size: 30px;
+    margin: 1em 0em 0em;
+  }
 `;
 const Search = styled.div`
 display:flex;
@@ -118,22 +131,23 @@ text-align: center !important;
 font-size:24px;
 position: absolute;
 @media only screen and (max-width: 768px){
-  font-size:12px;
+  position: absolute;
+  left: 1em;
   font-weight: bold;
-  margin: 14px 40px;
-  width:10em;
+  font-size: 18px;
+  margin: -1em 3em 10em;
+  width:9.5em;
   height:3em;
-  border-radius: 2px;
-  padding: 8px 13px;
+  border-radius: 5px;
+  padding: 14px 9px 8px 25px;
   display:flex;
+  border:14;
   .icon{
-    width: 10%;
-    padding-left: 7px;
-    padding-top: 1.3px;
+    width: 8%;
+    padding: 5px 7px;
       }
     }
 }
-
 button:hover{
   background-color:#DC143C;
 }
@@ -146,11 +160,15 @@ border:1px solid grey;
 border-radius:4px;
 background-color:hsla(0,0%,0%,0.5);
 font-size:15px;
-@media only screen and (max-width: 768px){
-  width:16em;
-  height:2em;
-  font-size:12px;
 }
+@media only screen and (max-width: 768px){
+  input{
+    width: 70%;
+    height:10%;
+    position: absolute;
+    margin: -6em 40px;
+    left: 0;
+  }
 }
 `;
 export default Faqs;

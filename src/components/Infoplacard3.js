@@ -25,13 +25,32 @@ const Infoplacard3 = ()=> {
       );
     }
 const Container2 = styled.div`
-padding:4em 4em 6em;
+padding:4em 4em 13em;
 position:relative;
 border-top:solid hsla(0, 0%, 50%,30%) 8px;
 border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
 img[src*="/images/en.png"] {
   position: relative;
   flex-direction:column;
+}
+
+@media only screen and (max-width: 768px){
+  font-size: 18px;
+  padding: 2em 4px 12em 2em;
+  img[src*="/images/en.png"] {
+    position: absolute;
+    left:0;
+    margin:10em auto;
+    width: 72%;
+    padding:1em;
+  }
+  #intro-text{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 1px;
+    padding:0em;
+  }
 }
 `;
 const H2 = styled.div`

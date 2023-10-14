@@ -26,10 +26,9 @@ display:flex;
 margin:1em 3em;
 gap:3em;
 @media only screen and (max-width: 768px){
-  display: flex;
-  flex-flow: column;
-  gap: 0;
-  text-align: center;
+  margin: 0 0 14em;
+  padding:0em;
+  font-size: 18px;
  }
 img[src*="/images/logo.png"] {
   width:150% ;
@@ -37,11 +36,16 @@ img[src*="/images/logo.png"] {
 }
 `;
 const Img = styled.div`
-padding:1em 2em;
-margin:1em 1em 1em 0.1em;
+padding: 2em 4px 12em 2em;
+margin:1em 1em 10em 0.1em;
 float: right;
 @media only screen and (max-width: 768px){
-  width: 80%;
+  width: 12em;
+  position: absolute;
+  margin: 12em 0 0 0;
+  display: inline-block;
+  float: left;
+  left:0;
  }
 `;
 const Textbox = styled.div`

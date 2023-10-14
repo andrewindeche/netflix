@@ -203,7 +203,6 @@ const Logo = styled.a`
     img {
         width: 25%;
         position: absolute;
-        margin: 14px;
         top:0;
         left:0;
         z-index:5
@@ -336,13 +335,12 @@ const Login = styled.a`
    border-radius: 4px;
    z-index:5;
    @media (max-width: 960px) {
-        padding:6px 16px;
+        padding:5px 12px;
         font-size:14px;
         white-space: nowrap;
         position: relative;
         top: 0;
-        right:1rem;
-        margin:8px;
+        right:3rem;
     }
    transition: all 250ms ease-out;
    cursor: pointer;

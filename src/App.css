@@ -16,6 +16,11 @@ p{
 line-height: 1.2 em;
 font-size:23px;
 }
+@media only screen and (max-width: 768px){
+.header{
+    font-size:18px;
+  }
+}
 .container {
   position: relative;
   display: inline-block;
