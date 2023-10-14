@@ -41,14 +41,14 @@ img[src*="/images/en.png"] {
     position: absolute;
     left:0;
     margin:10em auto;
-    width: 75%;
+    width: 72%;
     padding:1em;
   }
   #intro-text{
     position: relative;
     font-size: 30px;
     font-weight: bold;
-    margin: 0 8px;
+    margin: 0 1px;
     padding:0em;
   }
 }

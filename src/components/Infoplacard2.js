@@ -26,6 +26,7 @@ display:flex;
 margin:1em 3em;
 gap:3em;
 @media only screen and (max-width: 768px){
+  padding:0 4em 13em;
   font-size: 18px;
   display: flex;
   flex-flow: column;
@@ -44,7 +45,8 @@ float: right;
 @media only screen and (max-width: 768px){
   width: 12em;
   position: absolute;
-  margin: 10em;
+  margin: 3em;
+  left:0;
  }
 `;
 const Textbox = styled.div`
