@@ -12,11 +12,11 @@ const Infoplacard3 = ()=> {
           <h1 id="intro-text">Phone?Get our new</h1>
           <h1 id="intro-text">free plan!</h1>
           </H2>
-          <br/>
+          <p>
             Watch a selection of new movies and TV<br/>
             shows without adding any payment details!<br/>
           Get the app<FontAwesomeIcon
-           className = "icon" icon= {faChevronRight}/>
+           className = "icon" icon= {faChevronRight}/></p>
           <img src ='/images/en.png' alt="android"/>
         </Container2>
         </>
@@ -27,17 +27,21 @@ position:relative;
 border-top:solid hsla(0, 0%, 50%,30%) 8px;
 border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
 img[src*="/images/en.png"] {
-  position: relative;
-  flex-direction:column;
+  position: absolute;
+  flex-direction:row;
+  right: 6em;
+  top: 1px
 }
-
+p{
+  margin-left:3em
+}
 @media only screen and (max-width: 768px){
   font-size: 18px;
   padding: 2em 4px 12em 2em;
   img[src*="/images/en.png"] {
     position: absolute;
     left:0;
-    margin:2em auto;
+    top:70%;
     width: 60%;
     padding:1em;
   }
@@ -51,6 +55,7 @@ img[src*="/images/en.png"] {
 `;
 const H2 = styled.div`
 line-height: 0.2em;
+margin:3em
 `;
 const Img = styled.div`
 display:inline-flex;
