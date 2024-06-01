@@ -346,9 +346,10 @@ const Login = styled.a`
         padding:5px 12px;
         font-size:14px;
         white-space: nowrap;
-        position: relative;
+        position: absolute;
         top: 0;
-        right:3rem;
+        right:0px;
+        margin: 1 8em;
     }
    transition: all 250ms ease-out;
    cursor: pointer;
@@ -359,7 +360,7 @@ const Login = styled.a`
 `;
 const UserImage = styled.img`
    border-radius: 100%;
-   width: 100%;
+   width: 300px;
 `;
 const DropDown = styled.div`
    position: absolute;

@@ -34,18 +34,35 @@
     .title {
       font-size: 25px;
     }
+    .player-wrapper {
+      position: relative;
+      padding-top: 56.25%; 
+      margin-top: 20px;
+      padding-top: 75%; 
+    }   
+    .react-player {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 90% !important;
+    }
+    
   }
   .buttons{
     margin: 5em 1em;
   }
   .button_play {
    font-size:1.3rem;
-   padding:15px;
-   padding-right: 4em;
+   padding:8px;
+   padding-right: 2em;
    border-radius: 6px;
    font-size: 15px;
    font-weight: bold;
    margin-left:1em;
+  }
+  .button_play:hover{
+    border: red
   }
   .button_list{
     margin-left:2em;
@@ -69,3 +86,4 @@
     transition: 0.3s;
     background-color: rgba(173, 172, 172, 0.9);
 }
+
