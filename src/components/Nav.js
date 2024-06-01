@@ -125,11 +125,6 @@ const Nav = () => {
                 <Login onClick={handleAuth}>Sign In</Login>
                 :
                 <>
-                    <NavMenu>
-                            <a href ="/home" >
-                                <span>HOME</span>
-                            </a>
-                    </NavMenu>
                     <SignOut>
                         <UserImage src={userPhoto} alt={userName}/>
                         <DropDown>
