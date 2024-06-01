@@ -129,32 +129,6 @@ const Nav = () => {
                             <a href ="/home" >
                                 <span>HOME</span>
                             </a>
-                        <a href ="/home/TvShows">
-                            <span>TV SHOWS</span>
-                            <Drop>
-                            {optionTvshows.map((option) => (
-                               <Link to={`/home/TvShows/${option.value}`}>
-                                   <span>
-                                       <option value={option.value} onClick={()=> handleClick(option.value)}>{option.label}</option>
-
-                                   </span>
-                               </Link>
-                           ))}
-                           </Drop>
-                        </a>
-                        <a href ="/home/movies/">
-                            <span>MOVIES</span>
-                            <Drop>
-                            {optionMovies.map((option) => (
-                               <Link to={`/home/movies/${option.value}`}>
-                                   <span>
-                                       <option value={option.value} onClick={()=> handleClick(option.value)}>{option.label}</option>
-
-                                   </span>
-                               </Link>
-                           ))}
-                           </Drop>
-                          </a>
                     </NavMenu>
                     <SignOut>
                         <UserImage src={userPhoto} alt={userName}/>
