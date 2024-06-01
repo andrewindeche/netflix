@@ -17,15 +17,12 @@ const Infoplacard3 = ()=> {
             shows without adding any payment details!<br/>
           Get the app<FontAwesomeIcon
            className = "icon" icon= {faChevronRight}/>
-           <Img>
           <img src ='/images/en.png' alt="android"/>
-          </Img>
         </Container2>
         </>
       );
     }
 const Container2 = styled.div`
-padding:4em 4em 13em;
 position:relative;
 border-top:solid hsla(0, 0%, 50%,30%) 8px;
 border-bottom:solid hsla(0, 0%, 50%,30%) 8px;
@@ -40,8 +37,8 @@ img[src*="/images/en.png"] {
   img[src*="/images/en.png"] {
     position: absolute;
     left:0;
-    margin:10em auto;
-    width: 72%;
+    margin:2em auto;
+    width: 60%;
     padding:1em;
   }
   #intro-text{
@@ -49,7 +46,6 @@ img[src*="/images/en.png"] {
     font-size: 30px;
     font-weight: bold;
     margin: 0 1px;
-    padding:0em;
   }
 }
 `;
@@ -59,6 +55,5 @@ line-height: 0.2em;
 const Img = styled.div`
 display:inline-flex;
 float:right;
-margin: -8em 3em;
 `;
 export default Infoplacard3;
