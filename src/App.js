@@ -6,6 +6,7 @@ import Home from './components/Home';
 import FullLanding from './components/FullLanding';
 import Nav from './components/Nav';
 import Movies from './components/categories/Movies';
+import ErrorPage from './components/Error';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Routes>
         <Route exact path="/" element={<FullLanding/>} />
         <Route path="/home" element={<Home/>} /> 
-        <Route path="/home/movies/:selector" element={<Movies/>}/>           
+        <Route path="/home/movies/:selector" element={<Movies/>}/>  
+        <Route path="*" element={<ErrorPage />} />         
         </Routes> 
       </Router>        
       </div>
