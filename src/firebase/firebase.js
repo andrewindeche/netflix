@@ -4,7 +4,7 @@ import 'firebase/compat/firestore';
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBM4_MbUa9_kAIpzkUSDJH-46BljTHORFQ",
+  apiKey: "AIzaSyCU7xAqotkbyumGhjpmXS84e48KrRIijAw",
   authDomain: "guileless-concha-10401f.firebaseapp.com",
   projectId: "guileless-concha-10401f",
   storageBucket: "guileless-concha-10401f.appspot.com",
