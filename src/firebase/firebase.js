@@ -4,12 +4,6 @@ import 'firebase/compat/firestore';
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
-import { getStorage } from "firebase/storage";
-
-const firebaseConfig = {
   apiKey: "AIzaSyBM4_MbUa9_kAIpzkUSDJH-46BljTHORFQ",
   authDomain: "guileless-concha-10401f.firebaseapp.com",
   projectId: "guileless-concha-10401f",
