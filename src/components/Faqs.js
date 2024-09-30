@@ -4,13 +4,13 @@ import Accordion from "react-bootstrap/Accordion";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useDispatch } from "react-redux";
-import { auth } from "../firebase/firebase";
+import { getAuth, isSignInWithEmailLink, sendSignInLinkToEmail, signInWithEmailLink } from "firebase/auth";
 import { setUserLoginDetails } from "../users/userSlice";
 
 const Faqs = () => {
     const [email, setEmail] = useState('');
-
     const dispatch = useDispatch();
+    const auth = getAuth();
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -20,7 +20,7 @@ const Faqs = () => {
             handleCodeInApp: true,
         };
 
-        auth.sendSignInLinkToEmail(email, actionCodeSettings)
+        sendSignInLinkToEmail(auth, email, actionCodeSettings)
             .then(() => {
                 window.localStorage.setItem('emailForSignIn', email);
                 alert('Email sent! Check your inbox.');
@@ -31,12 +31,12 @@ const Faqs = () => {
     };
 
     useEffect(() => {
-        if (auth.isSignInWithEmailLink(window.location.href)) {
+        if (isSignInWithEmailLink(auth, window.location.href)) {
             let email = window.localStorage.getItem('emailForSignIn');
             if (!email) {
                 email = window.prompt('Please provide your email for confirmation');
             }
-            auth.signInWithEmailLink(email, window.location.href)
+            signInWithEmailLink(auth, email, window.location.href)
                 .then((result) => {
                     dispatch(
                         setUserLoginDetails({
@@ -51,8 +51,7 @@ const Faqs = () => {
                     alert(error.message);
                 });
         }
-    }, [dispatch]);
-
+    }, [auth, dispatch]);
     return (
         <Container>
             <h1 id="intro-text">Frequently Asked Questions</h1>
