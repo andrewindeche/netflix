@@ -2,52 +2,10 @@ import React, { useEffect,useCallback,useState } from "react";
 import styled from 'styled-components';
 import { auth, provider } from '../firebase/firebase';
 import {useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { signInWithPopup } from "firebase/auth";
 import { selectUserName, selectUserPhoto, setUserLoginDetails, setSignOutState} from '../users/userSlice';
 
-const optionMovies = [
-    {
-     label: "Action",
-     value: "Action",
-     },
-     {
-       label: "Comedy",
-       value: "Comedy",
-     },
-     {
-       label: "Horror",
-       value: "Horror",
-     },
-     {
-       label: "Romance",
-       value: "Romance",
-     },
-
-     {
-       label: "Animation",
-       value: "Animation",
-     },
-   ];
-
-   const optionTvshows = [
-    {
-     label: "Popular",
-     value: "Popular",
-     },
-     {
-       label: "Airing Today",
-       value: "Airing Today",
-     },
-     {
-       label: "On TV",
-       value: "On TV",
-     },
-     {
-       label: "Top Rated",
-       value: "Top Rated",
-     },
-   ];
 const Nav = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -76,7 +34,7 @@ const Nav = () => {
    }, [navigate,userName,setUser]);
    const handleAuth = () => {
        if (!userName){
-           auth.signInWithPopup(provider).then((result) => {
+        signInWithPopup(auth, provider).then((result) => {
                setUser(result.user);
            }).catch((error) => {
                alert(error.message);
@@ -126,7 +84,8 @@ const Nav = () => {
                 :
                 <>
                     <SignOut>
-                        <UserImage src={userPhoto} alt={userName}/>
+                        <UserImage src={userPhoto} alt="https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png"/>
+                        <UserName src={userName} />
                         <DropDown>
                             <span onClick={handleAuth}> Sign Out </span>
                         </DropDown>
@@ -219,87 +178,9 @@ const DropSeries = styled.div`
        margin-bottom: 10px;
    }
 `;
-const NavMenu = styled.div`
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   flex-flow: row wrap;
-   height: 100%;
-   padding: 0px;
-   position: relative;
-   margin-right: auto;
-   margin-left : 25px;
-   cursor:pointer;
-   @media only screen and (max-width: 960px) {
-    position: absolute;
-    left:10;
-   }
-   a{
-       display: flex;
-       align-items: center;
-       padding: 0 12px;
-       img{
-           height: 20px;
-           min-width: 20px;
-           width: 20px;
-           z-index: auto;
-       }
-       span{
-           color:rgb(249,249,249);
-           font-size: 13px;
-           letter-spacing: 1.42px;
-           line-height: 1.08px;
-           padding 2px 0px;
-           position: relative;
-           white-space: nowrap;
-           // border line
-           &:before{
-               background-color: rgb(249, 249, 249);
-               border-radius: 0px 0px 4px 4px;
-               bottom: -8px;
-               content: "";
-               opacity: 1;
-               left: 0px;
-               height: 2px;
-               position: absolute;
-               right: 0px;
-               transform-origin: left center;
-               transform: scaleX(0);
-               transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94)0s;
-               visibility: hidden;
-               width: auto;
-           }
-           @media only screen and (max-width: 960px){
-            font-size:8px;
-            font-weight: bolder;
-           }
-       }
-       &:hover {
-           span:before{
-               transform: scaleX(1);
-               visibility: visible;
-               opacity: 1 !important;
-           }
-           ${Drop}{
-               opacity: 1;
-               transition-duration: 1.5s;
-               span:before{
-                   transform: scaleX(0);
-                   opacity: 0 !important;
-               }
-           }
-           ${DropSeries}{
-               opacity: 1;
-               transition-duration: 1.5s;
-               span:before{
-                   transform: scaleX(0);
-                   opacity: 0 !important;
-               }
-           }
-       }
-   }
+const UserName = styled.div`
+    font-size:12px
 `;
-
 const Login = styled.a`
    background-color : red;
    color:white;
@@ -329,7 +210,7 @@ const Login = styled.a`
 `;
 const UserImage = styled.img`
    border-radius: 100%;
-   width: 300px;
+   width: 40px;
 `;
 const DropDown = styled.div`
    position: absolute;

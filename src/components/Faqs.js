@@ -4,7 +4,7 @@ import Accordion from "react-bootstrap/Accordion";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useDispatch } from "react-redux";
-import { getAuth, isSignInWithEmailLink, sendSignInLinkToEmail, signInWithEmailLink } from "firebase/auth";
+import { getAuth, sendSignInLinkToEmail, isSignInWithEmailLink, signInWithEmailLink } from "firebase/auth"; // Firebase v9 imports
 import { setUserLoginDetails } from "../users/userSlice";
 
 const Faqs = () => {
@@ -51,7 +51,7 @@ const Faqs = () => {
                     alert(error.message);
                 });
         }
-    }, [auth, dispatch]);
+    }, [dispatch, auth]);
     return (
         <Container>
             <h1 id="intro-text">Frequently Asked Questions</h1>
